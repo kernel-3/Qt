@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="source-code">
+      <UniqueIdentifier>{cbd8a0cf-d6f2-434a-8adf-40ebbaea4f81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\hl7">
+      <UniqueIdentifier>{fedb45ae-e461-434b-a0de-e2870f7b08ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\astm">
+      <UniqueIdentifier>{a6fec7c3-d6c2-4bd1-9412-5b033b7f38d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\interface">
+      <UniqueIdentifier>{975595d5-18ec-481f-a486-38eea99b4f74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\tool">
+      <UniqueIdentifier>{87a12f7c-5e6b-414f-8bb6-3bb931ea703f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\AppMain.cpp">
+      <Filter>source-code</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\hl7\HL7MSHSegment.cpp">
+      <Filter>source-code\hl7</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\hl7\HL7Segment.cpp">
+      <Filter>source-code\hl7</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\hl7\HL7Message.cpp">
+      <Filter>source-code\hl7</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\hl7\HL7MSASegment.cpp">
+      <Filter>source-code\hl7</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\hl7\HL7PIDSegment.cpp">
+      <Filter>source-code\hl7</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\hl7\HL7OBRSegment.cpp">
+      <Filter>source-code\hl7</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\hl7\HL7OBRSegmentForTest.cpp">
+      <Filter>source-code\hl7</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\hl7\HL7OBRSegmentForCalib.cpp">
+      <Filter>source-code\hl7</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\tool\DataConverter.cpp">
+      <Filter>source-code\tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\hl7\HL7OBRSegmentForQC.cpp">
+      <Filter>source-code\hl7</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\hl7\HL7OBXSegment.cpp">
+      <Filter>source-code\hl7</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\hl7\HL7QRDSegment.cpp">
+      <Filter>source-code\hl7</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\hl7\HL7QRFSegment.cpp">
+      <Filter>source-code\hl7</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\hl7\HL7ERRSegment.cpp">
+      <Filter>source-code\hl7</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\hl7\HL7QAKSegment.cpp">
+      <Filter>source-code\hl7</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\hl7\HL7DSPSegment.cpp">
+      <Filter>source-code\hl7</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\hl7\HL7DSCSegment.cpp">
+      <Filter>source-code\hl7</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\hl7\HL7ORUR01Message.cpp">
+      <Filter>source-code\hl7</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\hl7\HL7ORUR01MessageForTest.cpp">
+      <Filter>source-code\hl7</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\hl7\HL7ORUR01MessageForCalib.cpp">
+      <Filter>source-code\hl7</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\hl7\HL7ORUR01MessageForQC.cpp">
+      <Filter>source-code\hl7</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\hl7\HL7ACKR01Message.cpp">
+      <Filter>source-code\hl7</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\hl7\HL7QRYQ02Message.cpp">
+      <Filter>source-code\hl7</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\hl7\HL7QCKQ02Message.cpp">
+      <Filter>source-code\hl7</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\hl7\HL7DSRQ03Message.cpp">
+      <Filter>source-code\hl7</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\hl7\HL7ACKQ03Message.cpp">
+      <Filter>source-code\hl7</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\AppMain.h">
+      <Filter>source-code</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\hl7\HL7MSHSegment.h">
+      <Filter>source-code\hl7</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\hl7\HL7Segment.h">
+      <Filter>source-code\hl7</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\hl7\HL7Message.h">
+      <Filter>source-code\hl7</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\hl7\HL7MSASegment.h">
+      <Filter>source-code\hl7</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\hl7\HL7PIDSegment.h">
+      <Filter>source-code\hl7</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\hl7\HL7OBRSegment.h">
+      <Filter>source-code\hl7</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\hl7\HL7OBRSegmentForTest.h">
+      <Filter>source-code\hl7</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\hl7\HL7OBRSegmentForCalib.h">
+      <Filter>source-code\hl7</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\tool\DataConverter.h">
+      <Filter>source-code\tool</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\hl7\HL7OBRSegmentForQC.h">
+      <Filter>source-code\hl7</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\hl7\HL7OBXSegment.h">
+      <Filter>source-code\hl7</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\hl7\HL7QRDSegment.h">
+      <Filter>source-code\hl7</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\hl7\HL7QRFSegment.h">
+      <Filter>source-code\hl7</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\hl7\HL7ERRSegment.h">
+      <Filter>source-code\hl7</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\hl7\HL7QAKSegment.h">
+      <Filter>source-code\hl7</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\hl7\HL7DSPSegment.h">
+      <Filter>source-code\hl7</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\hl7\HL7DSCSegment.h">
+      <Filter>source-code\hl7</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\hl7\HL7ORUR01Message.h">
+      <Filter>source-code\hl7</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\hl7\HL7ORUR01MessageForTest.h">
+      <Filter>source-code\hl7</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\hl7\HL7ORUR01MessageForCalib.h">
+      <Filter>source-code\hl7</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\hl7\HL7ORUR01MessageForQC.h">
+      <Filter>source-code\hl7</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\hl7\HL7ACKR01Message.h">
+      <Filter>source-code\hl7</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\hl7\HL7QRYQ02Message.h">
+      <Filter>source-code\hl7</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\hl7\HL7QCKQ02Message.h">
+      <Filter>source-code\hl7</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\hl7\HL7DSRQ03Message.h">
+      <Filter>source-code\hl7</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\hl7\HL7ACKQ03Message.h">
+      <Filter>source-code\hl7</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Lis.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\Lis.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Lis.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

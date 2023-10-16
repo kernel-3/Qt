@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="source-code">
+      <UniqueIdentifier>{b29dca73-aadd-47f7-853d-97aa238e4982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\tool">
+      <UniqueIdentifier>{56dc4a0a-542d-4328-bbd1-afade4139ccd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\graphic">
+      <UniqueIdentifier>{4193395f-76e6-4d93-a655-3453ca06fa99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\env">
+      <UniqueIdentifier>{56baeb16-0a2b-4f3f-a745-e20df7d74f8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\control">
+      <UniqueIdentifier>{d9db09ff-5ddf-4cda-bde1-b858e365bab4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\print">
+      <UniqueIdentifier>{72002484-3996-4498-a67e-7ee24c4d4126}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\database">
+      <UniqueIdentifier>{c7a533c0-63b3-43ad-8b53-56703473a6d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\layout">
+      <UniqueIdentifier>{bd2fe1c6-b940-4875-9e64-470e50bfdde7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\comm">
+      <UniqueIdentifier>{d60d5a75-31f7-4cf0-a4c6-05160fbddee3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\arithmetic">
+      <UniqueIdentifier>{31751cee-4736-43d6-afc8-0631dc6fc786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\tool\MtLock.cpp">
+      <Filter>source-code\tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\tool\MtCharacterSet.cpp">
+      <Filter>source-code\tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\graphic\MtImage.cpp">
+      <Filter>source-code\graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\graphic\MtBitmap.cpp">
+      <Filter>source-code\graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\env\MtGdiplus.cpp">
+      <Filter>source-code\env</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\control\MtImageStatic.cpp">
+      <Filter>source-code\control</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\control\MtImageButton.cpp">
+      <Filter>source-code\control</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\control\MtImageComboBox.cpp">
+      <Filter>source-code\control</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\print\MtPrintingFrame.cpp">
+      <Filter>source-code\print</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\print\MtPrintingView.cpp">
+      <Filter>source-code\print</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\control\MtImageEdit.cpp">
+      <Filter>source-code\control</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\database\MtADOConnection.cpp">
+      <Filter>source-code\database</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\database\MtADORecordset.cpp">
+      <Filter>source-code\database</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\database\MtADOCommand.cpp">
+      <Filter>source-code\database</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\database\MtADOParameters.cpp">
+      <Filter>source-code\database</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\database\MtADODataConverter.cpp">
+      <Filter>source-code\database</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\layout\MtLayout.cpp">
+      <Filter>source-code\layout</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\layout\MtLayoutItem.cpp">
+      <Filter>source-code\layout</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\layout\MtLayoutSpacingItem.cpp">
+      <Filter>source-code\layout</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\layout\MtLayoutStretchItem.cpp">
+      <Filter>source-code\layout</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\layout\MtLayoutLayoutItem.cpp">
+      <Filter>source-code\layout</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\layout\MtLayoutWindowItem.cpp">
+      <Filter>source-code\layout</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\layout\MtHorizonLayout.cpp">
+      <Filter>source-code\layout</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\layout\MtVerticalLayout.cpp">
+      <Filter>source-code\layout</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\layout\MtLayoutFixedWindowItem.cpp">
+      <Filter>source-code\layout</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\layout\MtLayoutFixedLayoutItem.cpp">
+      <Filter>source-code\layout</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\comm\MtSerialPortParameter.cpp">
+      <Filter>source-code\comm</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\comm\MtSerialPort.cpp">
+      <Filter>source-code\comm</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\comm\MtSocket.cpp">
+      <Filter>source-code\comm</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\comm\MtNetPort.cpp">
+      <Filter>source-code\comm</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\comm\MtSocketFinder.cpp">
+      <Filter>source-code\comm</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\graphic\MtRegionDivision.cpp">
+      <Filter>source-code\graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\control\MtImageHeaderCtrl.cpp">
+      <Filter>source-code\control</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\control\MtImageListCtrl.cpp">
+      <Filter>source-code\control</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\control\MtComplexListCtrl.cpp">
+      <Filter>source-code\control</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\control\ListItemComment.cpp">
+      <Filter>source-code\control</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\arithmetic\MtLMFormula.cpp">
+      <Filter>source-code\arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="MFCToolkit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\control\MtStrictEdit.cpp">
+      <Filter>source-code\control</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\arithmetic\MtSolvingEquations.cpp">
+      <Filter>source-code\arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\arithmetic\MtLMFitting.cpp">
+      <Filter>source-code\arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\arithmetic\MtFormula.cpp">
+      <Filter>source-code\arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\arithmetic\MtSimpleLinearFitting.cpp">
+      <Filter>source-code\arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\arithmetic\MtSimpleLinearFormula.cpp">
+      <Filter>source-code\arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\control\MtChart.cpp">
+      <Filter>source-code\control</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\graphic\MtGraph.cpp">
+      <Filter>source-code\graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\graphic\MtCoordinateAxisGraph.cpp">
+      <Filter>source-code\graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\control\MtCurveChart.cpp">
+      <Filter>source-code\control</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\graphic\MtCurveGraph.cpp">
+      <Filter>source-code\graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\graphic\MtPointsGraph.cpp">
+      <Filter>source-code\graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\tool\MtLog.cpp">
+      <Filter>source-code\tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\tool\MtIni.cpp">
+      <Filter>source-code\tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\arithmetic\MtPolynomialFormula.cpp">
+      <Filter>source-code\arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\arithmetic\MtPolynomialFitting.cpp">
+      <Filter>source-code\arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\arithmetic\MtSolvingPolynomial.cpp">
+      <Filter>source-code\arithmetic</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MFCToolkit.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\MFCToolkit.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\tool\MtLock.h">
+      <Filter>source-code\tool</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\tool\MtAutoLock.h">
+      <Filter>source-code\tool</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\tool\MtCharacterSet.h">
+      <Filter>source-code\tool</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\graphic\MtImage.h">
+      <Filter>source-code\graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\graphic\MtBitmap.h">
+      <Filter>source-code\graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\tool\MtSingleton.h">
+      <Filter>source-code\tool</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\env\MtGdiplus.h">
+      <Filter>source-code\env</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\control\MtImageStatic.h">
+      <Filter>source-code\control</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\control\MtImageButton.h">
+      <Filter>source-code\control</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\control\MtImageComboBox.h">
+      <Filter>source-code\control</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\print\MtPrintingFrame.h">
+      <Filter>source-code\print</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\print\MtPrintingView.h">
+      <Filter>source-code\print</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\control\MtImageEdit.h">
+      <Filter>source-code\control</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\database\MtADOConnection.h">
+      <Filter>source-code\database</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\database\MtADORecordset.h">
+      <Filter>source-code\database</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\database\MtADOCommand.h">
+      <Filter>source-code\database</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\database\MtADOParameters.h">
+      <Filter>source-code\database</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\database\MtADODataConverter.h">
+      <Filter>source-code\database</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\layout\MtLayout.h">
+      <Filter>source-code\layout</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\layout\MtLayoutItem.h">
+      <Filter>source-code\layout</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\layout\MtLayoutRect.h">
+      <Filter>source-code\layout</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\layout\MtLayoutSpacingItem.h">
+      <Filter>source-code\layout</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\layout\MtLayoutStretchItem.h">
+      <Filter>source-code\layout</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\layout\MtLayoutLayoutItem.h">
+      <Filter>source-code\layout</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\layout\MtLayoutWindowItem.h">
+      <Filter>source-code\layout</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\layout\MtHorizonLayout.h">
+      <Filter>source-code\layout</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\layout\MtLayoutSize.h">
+      <Filter>source-code\layout</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\layout\MtVerticalLayout.h">
+      <Filter>source-code\layout</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\layout\MtLayoutFixedWindowItem.h">
+      <Filter>source-code\layout</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\layout\MtLayoutFixedLayoutItem.h">
+      <Filter>source-code\layout</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\comm\MtSerialPortParameter.h">
+      <Filter>source-code\comm</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\comm\MtSerialPort.h">
+      <Filter>source-code\comm</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\comm\MtSocket.h">
+      <Filter>source-code\comm</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\comm\MtNetPort.h">
+      <Filter>source-code\comm</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\comm\MtSocketFinder.h">
+      <Filter>source-code\comm</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\graphic\MtRegionDivision.h">
+      <Filter>source-code\graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\control\MtImageHeaderCtrl.h">
+      <Filter>source-code\control</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\control\MtImageListCtrl.h">
+      <Filter>source-code\control</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\control\MtComplexListCtrl.h">
+      <Filter>source-code\control</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\control\ListItemComment.h">
+      <Filter>source-code\control</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\arithmetic\MtMatrix.h">
+      <Filter>source-code\arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\arithmetic\MtMatrixDataPtr.h">
+      <Filter>source-code\arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\arithmetic\MtLMFormula.h">
+      <Filter>source-code\arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\control\MtStrictEdit.h">
+      <Filter>source-code\control</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\tool\MtAutoReset.h">
+      <Filter>source-code\tool</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\arithmetic\MtSolvingEquations.h">
+      <Filter>source-code\arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\arithmetic\MtLMFitting.h">
+      <Filter>source-code\arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\arithmetic\MtFormula.h">
+      <Filter>source-code\arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\arithmetic\MtSimpleLinearFitting.h">
+      <Filter>source-code\arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\arithmetic\MtSimpleLinearFormula.h">
+      <Filter>source-code\arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\control\MtChart.h">
+      <Filter>source-code\control</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\graphic\MtGraph.h">
+      <Filter>source-code\graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\graphic\MtCoordinateAxisGraph.h">
+      <Filter>source-code\graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\control\MtCurveChart.h">
+      <Filter>source-code\control</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\graphic\MtCurveGraph.h">
+      <Filter>source-code\graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\graphic\MtPointsGraph.h">
+      <Filter>source-code\graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\tool\MtAutoDeleter.h">
+      <Filter>source-code\tool</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\tool\MtLog.h">
+      <Filter>source-code\tool</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\tool\MtIni.h">
+      <Filter>source-code\tool</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\arithmetic\MtPolynomialFormula.h">
+      <Filter>source-code\arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\arithmetic\MtPolynomialFitting.h">
+      <Filter>source-code\arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\arithmetic\MtSolvingPolynomial.h">
+      <Filter>source-code\arithmetic</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MFCToolkit.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

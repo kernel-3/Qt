@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="source-code">
+      <UniqueIdentifier>{efd2f8d8-43ce-445f-8b35-66f20b3b2415}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\calibration">
+      <UniqueIdentifier>{56cc05f7-d6b6-4ea5-8e9d-bd53ba4018ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\arithmetic">
+      <UniqueIdentifier>{178ed957-0b80-4d71-89af-e9b04f5a4ebb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\AppMain.cpp">
+      <Filter>source-code</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\calibration\LogitLog4P.cpp">
+      <Filter>source-code\calibration</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\calibration\CalibrationFactory.cpp">
+      <Filter>source-code\calibration</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\calibration\LogitLog5P.cpp">
+      <Filter>source-code\calibration</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\arithmetic\MtFormula.cpp">
+      <Filter>source-code\arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\arithmetic\MtLMFitting.cpp">
+      <Filter>source-code\arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\arithmetic\MtLMFormula.cpp">
+      <Filter>source-code\arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\arithmetic\MtPolynomialFitting.cpp">
+      <Filter>source-code\arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\arithmetic\MtPolynomialFormula.cpp">
+      <Filter>source-code\arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\arithmetic\MtSimpleLinearFitting.cpp">
+      <Filter>source-code\arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\arithmetic\MtSimpleLinearFormula.cpp">
+      <Filter>source-code\arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\arithmetic\MtSolvingEquations.cpp">
+      <Filter>source-code\arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\arithmetic\MtSolvingPolynomial.cpp">
+      <Filter>source-code\arithmetic</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\AppMain.h">
+      <Filter>source-code</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\calibration\LogitLog4P.h">
+      <Filter>source-code\calibration</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\calibration\CalibrationFactory.h">
+      <Filter>source-code\calibration</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\calibration\LogitLog5P.h">
+      <Filter>source-code\calibration</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\arithmetic\MtFormula.h">
+      <Filter>source-code\arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\arithmetic\MtLMFitting.h">
+      <Filter>source-code\arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\arithmetic\MtLMFormula.h">
+      <Filter>source-code\arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\arithmetic\MtMatrix.h">
+      <Filter>source-code\arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\arithmetic\MtMatrixDataPtr.h">
+      <Filter>source-code\arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\arithmetic\MtPolynomialFitting.h">
+      <Filter>source-code\arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\arithmetic\MtPolynomialFormula.h">
+      <Filter>source-code\arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\arithmetic\MtSimpleLinearFitting.h">
+      <Filter>source-code\arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\arithmetic\MtSimpleLinearFormula.h">
+      <Filter>source-code\arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\arithmetic\MtSolvingEquations.h">
+      <Filter>source-code\arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\arithmetic\MtSolvingPolynomial.h">
+      <Filter>source-code\arithmetic</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Algorithm.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\Algorithm.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Algorithm.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

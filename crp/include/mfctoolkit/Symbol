@@ -1,0 +1,7 @@
+#pragma once
+
+#ifdef MFC_TOOLKIT_EXPORTS
+#define MFC_TOOLKIT_API __declspec(dllexport)
+#else
+#define MFC_TOOLKIT_API __declspec(dllimport)
+#endif

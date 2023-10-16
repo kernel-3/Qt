@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="source-code">
+      <UniqueIdentifier>{4eed4fc2-f538-4904-b4c0-56363e1c79ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\instrument">
+      <UniqueIdentifier>{09e2c4de-27c0-44fd-861f-2e2888e6e13c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\instrument\communication">
+      <UniqueIdentifier>{f68201a9-fd81-4807-b301-c7a87dbd0544}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\instrument\function">
+      <UniqueIdentifier>{adfe9f5b-50b0-4a8b-912b-e2916ab55c0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\instrument\function\timing">
+      <UniqueIdentifier>{db548bf8-642f-4128-9c8a-5b4c9cbc8764}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\instrument\component">
+      <UniqueIdentifier>{ed30c06a-360c-4e43-8698-38a72be20e4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\common">
+      <UniqueIdentifier>{8b76e50b-cf56-46fa-a41b-0e0bf24f53d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\export">
+      <UniqueIdentifier>{ed9bea85-1915-4801-bd25-9cc23e7e7ba2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\AppMain.cpp">
+      <Filter>source-code</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\Instrument.cpp">
+      <Filter>source-code\instrument</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\communication\Command.cpp">
+      <Filter>source-code\instrument\communication</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\communication\Port.cpp">
+      <Filter>source-code\instrument\communication</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\Action.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\Detect.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\PutTubeInWashingDisc.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\SequenceDiagram.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\TakeTubeOutOfReactionDisc.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\Timing.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\component\Component.cpp">
+      <Filter>source-code\instrument\component</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\component\Components.cpp">
+      <Filter>source-code\instrument\component</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\component\DetectionDisc.cpp">
+      <Filter>source-code\instrument\component</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\component\ReactionDisc.cpp">
+      <Filter>source-code\instrument\component</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\component\ReagentDisc.cpp">
+      <Filter>source-code\instrument\component</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\component\SpecimenDisc.cpp">
+      <Filter>source-code\instrument\component</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\Functions.cpp">
+      <Filter>source-code\instrument\function</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\ReactionDiscRotation.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\common\CommonData.cpp">
+      <Filter>source-code\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\common\Logs.cpp">
+      <Filter>source-code\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\common\Inis.cpp">
+      <Filter>source-code\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\component\TubeStorehouse.cpp">
+      <Filter>source-code\instrument\component</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\component\LoadTong.cpp">
+      <Filter>source-code\instrument\component</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\PutTubeInReactionDisc.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\SpecimenDiscRotation.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\component\SpecimenArm.cpp">
+      <Filter>source-code\instrument\component</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\SpecimenArmSpit.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\SpecimenArmSuck.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\SpecimenArmWash.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\component\ReagentArm.cpp">
+      <Filter>source-code\instrument\component</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\ReagentArmSuck.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\ReagentArmSpit.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\ReagentArmWash.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\ReagentDiscRotation.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\component\MagneticBeadDisc.cpp">
+      <Filter>source-code\instrument\component</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\MagneticBeadDiscRotation.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\component\WashingDisc.cpp">
+      <Filter>source-code\instrument\component</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\WashingDiscRotation.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\DetectionDiscRotation.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\component\TransportTong.cpp">
+      <Filter>source-code\instrument\component</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\DiscardTube.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\WashingDiscWash.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\ReturnTubeToReactionDisc.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\PutTubeInDetectionDisc.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\TakeTubeOutOfTubeStoreHouse.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\TakeTubeOutOfDetectionDisc.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\timing\TakeTubeOutOfWashingDisc.cpp">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\export\TestItem.cpp">
+      <Filter>source-code\export</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\communication\ControlPort.cpp">
+      <Filter>source-code\instrument\communication</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\communication\Communications.cpp">
+      <Filter>source-code\instrument\communication</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\instrument\function\Function.cpp">
+      <Filter>source-code\instrument\function</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\export\InstrumentControler.cpp">
+      <Filter>source-code\export</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\AppMain.h">
+      <Filter>source-code</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\Instrument.h">
+      <Filter>source-code\instrument</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\communication\Command.h">
+      <Filter>source-code\instrument\communication</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\communication\Port.h">
+      <Filter>source-code\instrument\communication</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\Action.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\Detect.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\PutTubeInWashingDisc.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\SequenceDiagram.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\TakeTubeOutOfReactionDisc.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\Timing.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\component\Component.h">
+      <Filter>source-code\instrument\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\component\Components.h">
+      <Filter>source-code\instrument\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\component\DetectionDisc.h">
+      <Filter>source-code\instrument\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\component\ReactionDisc.h">
+      <Filter>source-code\instrument\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\component\ReagentDisc.h">
+      <Filter>source-code\instrument\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\component\SpecimenDisc.h">
+      <Filter>source-code\instrument\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\Functions.h">
+      <Filter>source-code\instrument\function</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\ReactionDiscRotation.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\common\CommonData.h">
+      <Filter>source-code\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\common\Logs.h">
+      <Filter>source-code\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\common\Inis.h">
+      <Filter>source-code\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\component\TubeStorehouse.h">
+      <Filter>source-code\instrument\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\component\LoadTong.h">
+      <Filter>source-code\instrument\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\PutTubeInReactionDisc.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\SpecimenDiscRotation.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\component\SpecimenArm.h">
+      <Filter>source-code\instrument\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\SpecimenArmSpit.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\SpecimenArmSuck.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\SpecimenArmWash.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\component\ReagentArm.h">
+      <Filter>source-code\instrument\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\ReagentArmSuck.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\ReagentArmSpit.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\ReagentArmWash.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\ReagentDiscRotation.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\component\MagneticBeadDisc.h">
+      <Filter>source-code\instrument\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\MagneticBeadDiscRotation.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\component\WashingDisc.h">
+      <Filter>source-code\instrument\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\WashingDiscRotation.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\DetectionDiscRotation.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\component\TransportTong.h">
+      <Filter>source-code\instrument\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\DiscardTube.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\WashingDiscWash.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\ReturnTubeToReactionDisc.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\PutTubeInDetectionDisc.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\TakeTubeOutOfTubeStoreHouse.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\TakeTubeOutOfDetectionDisc.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\timing\TakeTubeOutOfWashingDisc.h">
+      <Filter>source-code\instrument\function\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\export\TestItem.h">
+      <Filter>source-code\export</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\communication\ControlPort.h">
+      <Filter>source-code\instrument\communication</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\communication\Communications.h">
+      <Filter>source-code\instrument\communication</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\instrument\function\Function.h">
+      <Filter>source-code\instrument\function</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\export\InstrumentControler.h">
+      <Filter>source-code\export</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="InstrumentControler.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\InstrumentControler.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="source-code\export\Symbol">
+      <Filter>source-code\export</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="InstrumentControler.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

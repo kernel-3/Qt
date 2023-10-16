@@ -1,0 +1,22 @@
+﻿  MtSimpleLinearFitting.cpp
+D:\CODE\crp\Algorithm\Algorithm\source-code\arithmetic\MtSimpleLinearFitting.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  CalibrationFactory.cpp
+D:\CODE\crp\Algorithm\Algorithm\source-code\arithmetic\MtSimpleLinearFitting.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\CODE\crp\Algorithm\Algorithm\source-code\calibration\CalibrationFactory.cpp(231,11): warning C4244: “return”: 从“double”转换到“int”，可能丢失数据
+D:\CODE\crp\Algorithm\Algorithm\source-code\calibration\CalibrationFactory.cpp(234,10): warning C4244: “return”: 从“double”转换到“int”，可能丢失数据
+D:\CODE\crp\Algorithm\Algorithm\source-code\calibration\CalibrationFactory.cpp(621,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\CODE\crp\Algorithm\Algorithm\source-code\calibration\CalibrationFactory.cpp(1185,115): warning C4100: “ybase”: 未引用的形参
+D:\CODE\crp\Algorithm\Algorithm\source-code\calibration\CalibrationFactory.cpp(1185,100): warning C4100: “xbase”: 未引用的形参
+D:\CODE\crp\Algorithm\Algorithm\source-code\calibration\CalibrationFactory.cpp(1184,66): warning C4100: “is_s0_participation”: 未引用的形参
+  正在生成代码...
+  LogitLog5P.cpp
+D:\CODE\crp\Algorithm\Algorithm\source-code\calibration\LogitLog5P.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  Algorithm.vcxproj -> D:\CODE\crp\Algorithm\Debug\Algorithm.dll
+  ..\Debug\Algorithm.dll
+  复制了 1 个文件
+  ..\Debug\Algorithm.lib
+  复制了 1 个文件
+  .\source-code\Symbol
+  复制了 1 个文件
+  .\source-code\calibration\CalibrationFactory.h
+  复制了 1 个文件

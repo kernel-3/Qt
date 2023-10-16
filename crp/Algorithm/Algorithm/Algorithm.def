@@ -1,0 +1,15 @@
+; Algorithm.def : Declares the module parameters for the DLL.
+
+LIBRARY "Algorithm.dll"
+
+EXPORTS
+    ; Explicit exports can go here
+	calibrate
+	calculate_concentration
+	calculate_luminous
+	convert_x_y_coordinates_a
+	convert_x_y_coordinates_b
+	convert_to_x_y_coordinates_a
+	convert_to_x_y_coordinates_b
+	convert_x_y_coordinates
+

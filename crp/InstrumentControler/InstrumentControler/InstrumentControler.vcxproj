@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UDebug|Win32">
+      <Configuration>UDebug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="URelease|Win32">
+      <Configuration>URelease</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F6D0C20C-3DC0-45DC-8111-C672F9E848A9}</ProjectGuid>
+    <RootNamespace>InstrumentControler</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UDebug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='URelease|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UDebug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='URelease|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\Debug\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UDebug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\UDebug\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\Release\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='URelease|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\URelease\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>.\InstrumentControler.def</ModuleDefinitionFile>
+      <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>xcopy ..\Debug\InstrumentControler.dll ..\..\bin\ /y
+xcopy ..\Debug\InstrumentControler.lib ..\..\lib\ /y
+xcopy .\source-code\export\Symbol ..\..\include\instrumentcontroler\ /y
+xcopy .\source-code\export\TestItem.h ..\..\include\instrumentcontroler\ /y
+xcopy .\source-code\export\InstrumentControler.h ..\..\include\instrumentcontroler\ /y
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UDebug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>.\InstrumentControler.def</ModuleDefinitionFile>
+      <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>xcopy ..\UDebug\InstrumentControler.dll ..\..\bin\ /y
+xcopy ..\UDebug\InstrumentControler.lib ..\..\lib\ /y
+xcopy .\source-code\export\Symbol ..\..\include\instrumentcontroler\ /y
+xcopy .\source-code\export\TestItem.h ..\..\include\instrumentcontroler\ /y
+xcopy .\source-code\export\InstrumentControler.h ..\..\include\instrumentcontroler\ /y
+
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\InstrumentControler.def</ModuleDefinitionFile>
+      <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>xcopy ..\Release\InstrumentControler.dll ..\..\bin\ /y
+xcopy ..\Release\InstrumentControler.lib ..\..\lib\ /y
+xcopy .\source-code\export\Symbol ..\..\include\instrumentcontroler\ /y
+xcopy .\source-code\export\TestItem.h ..\..\include\instrumentcontroler\ /y
+xcopy .\source-code\export\InstrumentControler.h ..\..\include\instrumentcontroler\ /y
+</Command>
+    </PostBuildEvent>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='URelease|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\InstrumentControler.def</ModuleDefinitionFile>
+      <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>xcopy ..\URelease\InstrumentControler.dll ..\..\bin\ /y
+xcopy ..\URelease\InstrumentControler.lib ..\..\lib\ /y
+xcopy .\source-code\export\Symbol ..\..\include\instrumentcontroler\ /y
+xcopy .\source-code\export\TestItem.h ..\..\include\instrumentcontroler\ /y
+xcopy .\source-code\export\InstrumentControler.h ..\..\include\instrumentcontroler\ /y
+</Command>
+    </PostBuildEvent>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source-code\AppMain.cpp" />
+    <ClCompile Include="source-code\common\CommonData.cpp" />
+    <ClCompile Include="source-code\common\Inis.cpp" />
+    <ClCompile Include="source-code\common\Logs.cpp" />
+    <ClCompile Include="source-code\export\InstrumentControler.cpp" />
+    <ClCompile Include="source-code\export\TestItem.cpp" />
+    <ClCompile Include="source-code\instrument\communication\Command.cpp" />
+    <ClCompile Include="source-code\instrument\communication\Communications.cpp" />
+    <ClCompile Include="source-code\instrument\communication\ControlPort.cpp" />
+    <ClCompile Include="source-code\instrument\communication\Port.cpp" />
+    <ClCompile Include="source-code\instrument\component\Component.cpp" />
+    <ClCompile Include="source-code\instrument\component\Components.cpp" />
+    <ClCompile Include="source-code\instrument\component\DetectionDisc.cpp" />
+    <ClCompile Include="source-code\instrument\component\LoadTong.cpp" />
+    <ClCompile Include="source-code\instrument\component\MagneticBeadDisc.cpp" />
+    <ClCompile Include="source-code\instrument\component\ReactionDisc.cpp" />
+    <ClCompile Include="source-code\instrument\component\ReagentArm.cpp" />
+    <ClCompile Include="source-code\instrument\component\ReagentDisc.cpp" />
+    <ClCompile Include="source-code\instrument\component\SpecimenArm.cpp" />
+    <ClCompile Include="source-code\instrument\component\SpecimenDisc.cpp" />
+    <ClCompile Include="source-code\instrument\component\TransportTong.cpp" />
+    <ClCompile Include="source-code\instrument\component\TubeStorehouse.cpp" />
+    <ClCompile Include="source-code\instrument\component\WashingDisc.cpp" />
+    <ClCompile Include="source-code\instrument\function\Function.cpp" />
+    <ClCompile Include="source-code\instrument\function\Functions.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\Action.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\ReagentArmSpit.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\SpecimenArmSpit.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\Detect.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\PutTubeInDetectionDisc.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\DetectionDiscRotation.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\TakeTubeOutOfDetectionDisc.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\DiscardTube.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\ReagentArmSuck.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\SpecimenArmSuck.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\TakeTubeOutOfTubeStoreHouse.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\PutTubeInReactionDisc.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\MagneticBeadDiscRotation.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\PutTubeInWashingDisc.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\ReturnTubeToReactionDisc.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\ReactionDiscRotation.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\ReagentDiscRotation.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\SequenceDiagram.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\SpecimenDiscRotation.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\TakeTubeOutOfReactionDisc.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\Timing.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\TakeTubeOutOfWashingDisc.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\WashingDiscRotation.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\ReagentArmWash.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\SpecimenArmWash.cpp" />
+    <ClCompile Include="source-code\instrument\function\timing\WashingDiscWash.cpp" />
+    <ClCompile Include="source-code\instrument\Instrument.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="source-code\AppMain.h" />
+    <ClInclude Include="source-code\common\CommonData.h" />
+    <ClInclude Include="source-code\common\Inis.h" />
+    <ClInclude Include="source-code\common\Logs.h" />
+    <ClInclude Include="source-code\export\InstrumentControler.h" />
+    <ClInclude Include="source-code\export\TestItem.h" />
+    <ClInclude Include="source-code\instrument\communication\Command.h" />
+    <ClInclude Include="source-code\instrument\communication\Communications.h" />
+    <ClInclude Include="source-code\instrument\communication\ControlPort.h" />
+    <ClInclude Include="source-code\instrument\communication\Port.h" />
+    <ClInclude Include="source-code\instrument\component\Component.h" />
+    <ClInclude Include="source-code\instrument\component\Components.h" />
+    <ClInclude Include="source-code\instrument\component\DetectionDisc.h" />
+    <ClInclude Include="source-code\instrument\component\LoadTong.h" />
+    <ClInclude Include="source-code\instrument\component\MagneticBeadDisc.h" />
+    <ClInclude Include="source-code\instrument\component\ReactionDisc.h" />
+    <ClInclude Include="source-code\instrument\component\ReagentArm.h" />
+    <ClInclude Include="source-code\instrument\component\ReagentDisc.h" />
+    <ClInclude Include="source-code\instrument\component\SpecimenArm.h" />
+    <ClInclude Include="source-code\instrument\component\SpecimenDisc.h" />
+    <ClInclude Include="source-code\instrument\component\TransportTong.h" />
+    <ClInclude Include="source-code\instrument\component\TubeStorehouse.h" />
+    <ClInclude Include="source-code\instrument\component\WashingDisc.h" />
+    <ClInclude Include="source-code\instrument\function\Function.h" />
+    <ClInclude Include="source-code\instrument\function\Functions.h" />
+    <ClInclude Include="source-code\instrument\function\timing\Action.h" />
+    <ClInclude Include="source-code\instrument\function\timing\ReagentArmSpit.h" />
+    <ClInclude Include="source-code\instrument\function\timing\SpecimenArmSpit.h" />
+    <ClInclude Include="source-code\instrument\function\timing\Detect.h" />
+    <ClInclude Include="source-code\instrument\function\timing\PutTubeInDetectionDisc.h" />
+    <ClInclude Include="source-code\instrument\function\timing\DetectionDiscRotation.h" />
+    <ClInclude Include="source-code\instrument\function\timing\TakeTubeOutOfDetectionDisc.h" />
+    <ClInclude Include="source-code\instrument\function\timing\DiscardTube.h" />
+    <ClInclude Include="source-code\instrument\function\timing\ReagentArmSuck.h" />
+    <ClInclude Include="source-code\instrument\function\timing\SpecimenArmSuck.h" />
+    <ClInclude Include="source-code\instrument\function\timing\TakeTubeOutOfTubeStoreHouse.h" />
+    <ClInclude Include="source-code\instrument\function\timing\PutTubeInReactionDisc.h" />
+    <ClInclude Include="source-code\instrument\function\timing\MagneticBeadDiscRotation.h" />
+    <ClInclude Include="source-code\instrument\function\timing\PutTubeInWashingDisc.h" />
+    <ClInclude Include="source-code\instrument\function\timing\ReturnTubeToReactionDisc.h" />
+    <ClInclude Include="source-code\instrument\function\timing\ReactionDiscRotation.h" />
+    <ClInclude Include="source-code\instrument\function\timing\ReagentDiscRotation.h" />
+    <ClInclude Include="source-code\instrument\function\timing\SequenceDiagram.h" />
+    <ClInclude Include="source-code\instrument\function\timing\SpecimenDiscRotation.h" />
+    <ClInclude Include="source-code\instrument\function\timing\TakeTubeOutOfReactionDisc.h" />
+    <ClInclude Include="source-code\instrument\function\timing\Timing.h" />
+    <ClInclude Include="source-code\instrument\function\timing\TakeTubeOutOfWashingDisc.h" />
+    <ClInclude Include="source-code\instrument\function\timing\WashingDiscRotation.h" />
+    <ClInclude Include="source-code\instrument\function\timing\WashingDiscWash.h" />
+    <ClInclude Include="source-code\instrument\function\timing\ReagentArmWash.h" />
+    <ClInclude Include="source-code\instrument\function\timing\SpecimenArmWash.h" />
+    <ClInclude Include="source-code\instrument\Instrument.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="InstrumentControler.def" />
+    <None Include="res\InstrumentControler.rc2" />
+    <None Include="source-code\export\Symbol" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="InstrumentControler.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

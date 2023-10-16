@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="source-code">
+      <UniqueIdentifier>{ca92185d-99b7-471d-be74-754073340be2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\ui">
+      <UniqueIdentifier>{610fa835-4397-4b8e-b965-04633ad028ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\data">
+      <UniqueIdentifier>{e1e95a0e-b3c4-4da3-b6e5-118a9ac8b430}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\AppMain.h">
+      <Filter>source-code</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\ui\DlgMain.h">
+      <Filter>source-code\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\data\FittingData.h">
+      <Filter>source-code\data</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\ui\DlgInput.h">
+      <Filter>source-code\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgMultipleInput.h">
+      <Filter>source-code\ui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\AppMain.cpp">
+      <Filter>source-code</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\ui\DlgMain.cpp">
+      <Filter>source-code\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\data\FittingData.cpp">
+      <Filter>source-code\data</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\ui\DlgInput.cpp">
+      <Filter>source-code\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgMultipleInput.cpp">
+      <Filter>source-code\ui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AlgorithmTesting.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\AlgorithmTesting.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\AlgorithmTesting.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="source-code">
+      <UniqueIdentifier>{61dfc21f-5cb2-41a5-8969-2e33f644669f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\ui">
+      <UniqueIdentifier>{cf148439-dc62-4892-bc79-299c5a43d839}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\global">
+      <UniqueIdentifier>{b25cfa48-b94c-414a-8cd2-d93fc1736655}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\ui\workplace">
+      <UniqueIdentifier>{15452a05-312d-4ee6-866f-1fedca559898}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\data">
+      <UniqueIdentifier>{31049276-363c-4a88-9d55-1ff2d64bf17c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\ui\control">
+      <UniqueIdentifier>{3f71b371-9a19-4a93-b6cf-ce26a13c8adb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\ui\common">
+      <UniqueIdentifier>{56ebb337-6b14-4a09-ad36-3dcf7491ac29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\ui\reagent">
+      <UniqueIdentifier>{e08acf59-de62-4475-b069-915de54566d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\ui\calibration">
+      <UniqueIdentifier>{e37a8dbb-603a-48ea-86c3-e794a9a07ad3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\ui\qc">
+      <UniqueIdentifier>{afea03d1-3117-4d50-a51b-cc144b3ef3b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source-code\ui\utility">
+      <UniqueIdentifier>{55244c71-33d3-4755-bd40-70779866a6c0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\AppMain.h">
+      <Filter>source-code</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\global\GlobalData.h">
+      <Filter>source-code\global</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\global\Theme.h">
+      <Filter>source-code\global</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\ui\DialogMain.h">
+      <Filter>source-code\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\ui\workplace\DialogWorkPlace.h">
+      <Filter>source-code\ui\workplace</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\ui\DialogBaseCustom.h">
+      <Filter>source-code\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\data\Database.h">
+      <Filter>source-code\data</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\data\DatabaseManager.h">
+      <Filter>source-code\data</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\ui\workplace\DialogSpecimenInformation.h">
+      <Filter>source-code\ui\workplace</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\ui\control\MarkButton.h">
+      <Filter>source-code\ui\control</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\ui\common\DialogItemAndProfileKeys.h">
+      <Filter>source-code\ui\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\ui\common\DialogItemAndProfileKey.h">
+      <Filter>source-code\ui\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\ui\workplace\DialogDataReview.h">
+      <Filter>source-code\ui\workplace</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\ui\workplace\DialogTestSelection.h">
+      <Filter>source-code\ui\workplace</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\ui\reagent\DialogReagent.h">
+      <Filter>source-code\ui\reagent</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\ui\calibration\DialogCalibration.h">
+      <Filter>source-code\ui\calibration</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\ui\qc\DialogQC.h">
+      <Filter>source-code\ui\qc</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\ui\utility\DialogUtility.h">
+      <Filter>source-code\ui\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\ui\reagent\DialogReagentSetting.h">
+      <Filter>source-code\ui\reagent</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\ui\calibration\DialogStatus.h">
+      <Filter>source-code\ui\calibration</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\ui\calibration\DialogInstallation.h">
+      <Filter>source-code\ui\calibration</Filter>
+    </ClInclude>
+    <ClInclude Include="source-code\ui\calibration\DialogResult.h">
+      <Filter>source-code\ui\calibration</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\AppMain.cpp">
+      <Filter>source-code</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\global\GlobalData.cpp">
+      <Filter>source-code\global</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\global\Theme.cpp">
+      <Filter>source-code\global</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\ui\DialogMain.cpp">
+      <Filter>source-code\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\ui\workplace\DialogWorkPlace.cpp">
+      <Filter>source-code\ui\workplace</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\ui\DialogBaseCustom.cpp">
+      <Filter>source-code\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\data\Database.cpp">
+      <Filter>source-code\data</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\data\DatabaseManager.cpp">
+      <Filter>source-code\data</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\ui\workplace\DialogSpecimenInformation.cpp">
+      <Filter>source-code\ui\workplace</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\ui\control\MarkButton.cpp">
+      <Filter>source-code\ui\control</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\ui\common\DialogItemAndProfileKeys.cpp">
+      <Filter>source-code\ui\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\ui\common\DialogItemAndProfileKey.cpp">
+      <Filter>source-code\ui\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\ui\workplace\DialogDataReview.cpp">
+      <Filter>source-code\ui\workplace</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\ui\workplace\DialogTestSelection.cpp">
+      <Filter>source-code\ui\workplace</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\ui\reagent\DialogReagent.cpp">
+      <Filter>source-code\ui\reagent</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\ui\calibration\DialogCalibration.cpp">
+      <Filter>source-code\ui\calibration</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\ui\qc\DialogQC.cpp">
+      <Filter>source-code\ui\qc</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\ui\utility\DialogUtility.cpp">
+      <Filter>source-code\ui\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\ui\reagent\DialogReagentSetting.cpp">
+      <Filter>source-code\ui\reagent</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\ui\calibration\DialogStatus.cpp">
+      <Filter>source-code\ui\calibration</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\ui\calibration\DialogInstallation.cpp">
+      <Filter>source-code\ui\calibration</Filter>
+    </ClCompile>
+    <ClCompile Include="source-code\ui\calibration\DialogResult.cpp">
+      <Filter>source-code\ui\calibration</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Chemiluminescence_Analyzer.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Chemiluminescence_Analyzer.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Chemiluminescence_Analyzer.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

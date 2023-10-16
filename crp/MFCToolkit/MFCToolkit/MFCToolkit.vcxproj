@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UDebug|Win32">
+      <Configuration>UDebug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="URelease|Win32">
+      <Configuration>URelease</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{387B6308-2058-4A03-9491-9837983F92EE}</ProjectGuid>
+    <RootNamespace>MFCToolkit</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UDebug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='URelease|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UDebug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='URelease|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\Debug\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UDebug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\UDebug\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\Release\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='URelease|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\URelease\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>.\MFCToolkit.def</ModuleDefinitionFile>
+      <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>xcopy ..\Debug\MFCToolkit.lib ..\..\lib\ /y
+xcopy ..\Debug\MFCToolkit.dll ..\..\bin\ /y
+xcopy .\source-code\graphic\MtImage.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\graphic\MtBitmap.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\graphic\MtRegionDivision.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\graphic\MtGraph.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\graphic\MtCoordinateAxisGraph.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\graphic\MtCurveGraph.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\graphic\MtPointsGraph.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\control\MtImageButton.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtImageStatic.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtImageComboBox.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtImageEdit.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtStrictEdit.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtImageHeaderCtrl.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtImageListCtrl.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtComplexListCtrl.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtChart.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtCurveChart.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\print\MtPrintingFrame.h ..\..\include\mfctoolkit\print\ /y
+xcopy .\source-code\tool\MtLock.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtAutoLock.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtSingleton.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtCharacterSet.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtAutoReset.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtAutoDeleter.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtLog.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtIni.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\env\MtGdiplus.h ..\..\include\mfctoolkit\env\ /y
+xcopy .\source-code\Symbol ..\..\include\mfctoolkit\ /y
+xcopy .\source-code\database\MtADOConnection.h ..\..\include\mfctoolkit\database\ /y
+xcopy .\source-code\database\MtADORecordset.h ..\..\include\mfctoolkit\database\ /y
+xcopy .\source-code\database\MtADOCommand.h ..\..\include\mfctoolkit\database\ /y
+xcopy .\source-code\database\MtADOParameters.h ..\..\include\mfctoolkit\database\ /y
+xcopy .\source-code\database\MtADODataConverter.h ..\..\include\mfctoolkit\database\ /y
+xcopy .\source-code\layout\MtLayout.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtHorizonLayout.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtVerticalLayout.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutSpacingItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutStretchItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutLayoutItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutFixedLayoutItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutWindowItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutFixedWindowItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutRect.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutSize.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\comm\MtSerialPortParameter.h ..\..\include\mfctoolkit\comm\ /y
+xcopy .\source-code\comm\MtSerialPort.h ..\..\include\mfctoolkit\comm\ /y
+xcopy .\source-code\comm\MtSocket.h ..\..\include\mfctoolkit\comm\ /y
+xcopy .\source-code\comm\MtSocketFinder.h ..\..\include\mfctoolkit\comm\ /y
+xcopy .\source-code\comm\MtNetPort.h ..\..\include\mfctoolkit\comm\ /y
+xcopy .\source-code\arithmetic\MtMatrix.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtMatrixDataPtr.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtSolvingEquations.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtFormula.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtLMFormula.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtLMFitting.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtSimpleLinearFormula.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtSimpleLinearFitting.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtPolynomialFormula.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtPolynomialFitting.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtSolvingPolynomial.h ..\..\include\mfctoolkit\arithmetic\ /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UDebug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>.\MFCToolkit.def</ModuleDefinitionFile>
+      <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>xcopy ..\UDebug\MFCToolkit.lib ..\..\lib\ /y
+xcopy ..\UDebug\MFCToolkit.dll ..\..\bin\ /y
+xcopy .\source-code\graphic\MtImage.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\graphic\MtBitmap.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\graphic\MtRegionDivision.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\graphic\MtGraph.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\graphic\MtCoordinateAxisGraph.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\graphic\MtCurveGraph.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\graphic\MtPointsGraph.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\control\MtImageButton.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtImageStatic.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtImageComboBox.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtImageEdit.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtStrictEdit.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtImageHeaderCtrl.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtImageListCtrl.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtComplexListCtrl.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtChart.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtCurveChart.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\print\MtPrintingFrame.h ..\..\include\mfctoolkit\print\ /y
+xcopy .\source-code\tool\MtLock.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtAutoLock.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtSingleton.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtCharacterSet.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtAutoReset.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtAutoDeleter.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtLog.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtIni.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\env\MtGdiplus.h ..\..\include\mfctoolkit\env\ /y
+xcopy .\source-code\Symbol ..\..\include\mfctoolkit\ /y
+xcopy .\source-code\database\MtADOConnection.h ..\..\include\mfctoolkit\database\ /y
+xcopy .\source-code\database\MtADORecordset.h ..\..\include\mfctoolkit\database\ /y
+xcopy .\source-code\database\MtADOCommand.h ..\..\include\mfctoolkit\database\ /y
+xcopy .\source-code\database\MtADOParameters.h ..\..\include\mfctoolkit\database\ /y
+xcopy .\source-code\database\MtADODataConverter.h ..\..\include\mfctoolkit\database\ /y
+xcopy .\source-code\layout\MtLayout.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtHorizonLayout.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtVerticalLayout.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutSpacingItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutStretchItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutLayoutItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutFixedLayoutItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutWindowItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutFixedWindowItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutRect.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutSize.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\comm\MtSerialPortParameter.h ..\..\include\mfctoolkit\comm\ /y
+xcopy .\source-code\comm\MtSerialPort.h ..\..\include\mfctoolkit\comm\ /y
+xcopy .\source-code\comm\MtSocket.h ..\..\include\mfctoolkit\comm\ /y
+xcopy .\source-code\comm\MtSocketFinder.h ..\..\include\mfctoolkit\comm\ /y
+xcopy .\source-code\comm\MtNetPort.h ..\..\include\mfctoolkit\comm\ /y
+xcopy .\source-code\arithmetic\MtMatrix.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtMatrixDataPtr.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtSolvingEquations.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtFormula.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtLMFormula.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtLMFitting.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtSimpleLinearFormula.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtSimpleLinearFitting.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtPolynomialFormula.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtPolynomialFitting.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtSolvingPolynomial.h ..\..\include\mfctoolkit\arithmetic\ /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\MFCToolkit.def</ModuleDefinitionFile>
+      <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>xcopy ..\Release\MFCToolkit.lib ..\..\lib\ /y
+xcopy ..\Release\MFCToolkit.dll ..\..\bin\ /y
+xcopy .\source-code\graphic\MtImage.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\graphic\MtBitmap.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\graphic\MtRegionDivision.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\graphic\MtGraph.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\graphic\MtCoordinateAxisGraph.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\graphic\MtCurveGraph.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\graphic\MtPointsGraph.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\control\MtImageButton.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtImageStatic.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtImageComboBox.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtImageEdit.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtStrictEdit.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtImageHeaderCtrl.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtImageListCtrl.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtComplexListCtrl.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtChart.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtCurveChart.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\print\MtPrintingFrame.h ..\..\include\mfctoolkit\print\ /y
+xcopy .\source-code\tool\MtLock.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtAutoLock.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtSingleton.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtCharacterSet.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtAutoReset.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtAutoDeleter.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtLog.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtIni.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\env\MtGdiplus.h ..\..\include\mfctoolkit\env\ /y
+xcopy .\source-code\Symbol ..\..\include\mfctoolkit\ /y
+xcopy .\source-code\database\MtADOConnection.h ..\..\include\mfctoolkit\database\ /y
+xcopy .\source-code\database\MtADORecordset.h ..\..\include\mfctoolkit\database\ /y
+xcopy .\source-code\database\MtADOCommand.h ..\..\include\mfctoolkit\database\ /y
+xcopy .\source-code\database\MtADOParameters.h ..\..\include\mfctoolkit\database\ /y
+xcopy .\source-code\database\MtADODataConverter.h ..\..\include\mfctoolkit\database\ /y
+xcopy .\source-code\layout\MtLayout.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtHorizonLayout.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtVerticalLayout.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutSpacingItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutStretchItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutLayoutItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutFixedLayoutItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutWindowItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutFixedWindowItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutRect.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutSize.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\comm\MtSerialPortParameter.h ..\..\include\mfctoolkit\comm\ /y
+xcopy .\source-code\comm\MtSerialPort.h ..\..\include\mfctoolkit\comm\ /y
+xcopy .\source-code\comm\MtSocket.h ..\..\include\mfctoolkit\comm\ /y
+xcopy .\source-code\comm\MtSocketFinder.h ..\..\include\mfctoolkit\comm\ /y
+xcopy .\source-code\comm\MtNetPort.h ..\..\include\mfctoolkit\comm\ /y
+xcopy .\source-code\arithmetic\MtMatrix.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtMatrixDataPtr.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtSolvingEquations.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtFormula.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtLMFormula.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtLMFitting.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtSimpleLinearFormula.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtSimpleLinearFitting.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtPolynomialFormula.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtPolynomialFitting.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtSolvingPolynomial.h ..\..\include\mfctoolkit\arithmetic\ /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='URelease|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\MFCToolkit.def</ModuleDefinitionFile>
+      <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>xcopy ..\URelease\MFCToolkit.lib ..\..\lib\ /y
+xcopy ..\URelease\MFCToolkit.dll ..\..\bin\ /y
+xcopy .\source-code\graphic\MtImage.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\graphic\MtBitmap.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\graphic\MtRegionDivision.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\graphic\MtGraph.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\graphic\MtCoordinateAxisGraph.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\graphic\MtCurveGraph.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\graphic\MtPointsGraph.h ..\..\include\mfctoolkit\graphic\ /y
+xcopy .\source-code\control\MtImageButton.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtImageStatic.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtImageComboBox.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtImageEdit.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtStrictEdit.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtImageHeaderCtrl.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtImageListCtrl.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtComplexListCtrl.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtChart.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\control\MtCurveChart.h ..\..\include\mfctoolkit\control\ /y
+xcopy .\source-code\print\MtPrintingFrame.h ..\..\include\mfctoolkit\print\ /y
+xcopy .\source-code\tool\MtLock.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtAutoLock.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtSingleton.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtCharacterSet.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtAutoReset.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtAutoDeleter.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtLog.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\tool\MtIni.h ..\..\include\mfctoolkit\tool\ /y
+xcopy .\source-code\env\MtGdiplus.h ..\..\include\mfctoolkit\env\ /y
+xcopy .\source-code\Symbol ..\..\include\mfctoolkit\ /y
+xcopy .\source-code\database\MtADOConnection.h ..\..\include\mfctoolkit\database\ /y
+xcopy .\source-code\database\MtADORecordset.h ..\..\include\mfctoolkit\database\ /y
+xcopy .\source-code\database\MtADOCommand.h ..\..\include\mfctoolkit\database\ /y
+xcopy .\source-code\database\MtADOParameters.h ..\..\include\mfctoolkit\database\ /y
+xcopy .\source-code\database\MtADODataConverter.h ..\..\include\mfctoolkit\database\ /y
+xcopy .\source-code\layout\MtLayout.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtHorizonLayout.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtVerticalLayout.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutSpacingItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutStretchItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutLayoutItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutFixedLayoutItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\layout\MtLayoutWindowItem.h ..\..\include\mfctoolkit\layout\ /y
+xcopy .\source-code\comm\MtSerialPortParameter.h ..\..\include\mfctoolkit\comm\ /y
+xcopy .\source-code\comm\MtSerialPort.h ..\..\include\mfctoolkit\comm\ /y
+xcopy .\source-code\comm\MtSocket.h ..\..\include\mfctoolkit\comm\ /y
+xcopy .\source-code\comm\MtSocketFinder.h ..\..\include\mfctoolkit\comm\ /y
+xcopy .\source-code\comm\MtNetPort.h ..\..\include\mfctoolkit\comm\ /y
+xcopy .\source-code\arithmetic\MtMatrix.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtMatrixDataPtr.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtSolvingEquations.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtFormula.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtLMFormula.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtLMFitting.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtSimpleLinearFormula.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtSimpleLinearFitting.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtPolynomialFormula.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtPolynomialFitting.h ..\..\include\mfctoolkit\arithmetic\ /y
+xcopy .\source-code\arithmetic\MtSolvingPolynomial.h ..\..\include\mfctoolkit\arithmetic\ /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='UDebug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='URelease|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="MFCToolkit.cpp" />
+    <ClCompile Include="source-code\arithmetic\MtFormula.cpp" />
+    <ClCompile Include="source-code\arithmetic\MtLMFitting.cpp" />
+    <ClCompile Include="source-code\arithmetic\MtLMFormula.cpp" />
+    <ClCompile Include="source-code\arithmetic\MtPolynomialFitting.cpp" />
+    <ClCompile Include="source-code\arithmetic\MtPolynomialFormula.cpp" />
+    <ClCompile Include="source-code\arithmetic\MtSimpleLinearFitting.cpp" />
+    <ClCompile Include="source-code\arithmetic\MtSimpleLinearFormula.cpp" />
+    <ClCompile Include="source-code\arithmetic\MtSolvingEquations.cpp" />
+    <ClCompile Include="source-code\arithmetic\MtSolvingPolynomial.cpp" />
+    <ClCompile Include="source-code\comm\MtNetPort.cpp" />
+    <ClCompile Include="source-code\comm\MtSerialPort.cpp" />
+    <ClCompile Include="source-code\comm\MtSerialPortParameter.cpp" />
+    <ClCompile Include="source-code\comm\MtSocket.cpp" />
+    <ClCompile Include="source-code\comm\MtSocketFinder.cpp" />
+    <ClCompile Include="source-code\control\ListItemComment.cpp" />
+    <ClCompile Include="source-code\control\MtChart.cpp" />
+    <ClCompile Include="source-code\control\MtComplexListCtrl.cpp" />
+    <ClCompile Include="source-code\control\MtCurveChart.cpp" />
+    <ClCompile Include="source-code\control\MtImageButton.cpp" />
+    <ClCompile Include="source-code\control\MtImageComboBox.cpp" />
+    <ClCompile Include="source-code\control\MtImageEdit.cpp" />
+    <ClCompile Include="source-code\control\MtImageHeaderCtrl.cpp" />
+    <ClCompile Include="source-code\control\MtImageListCtrl.cpp" />
+    <ClCompile Include="source-code\control\MtImageStatic.cpp" />
+    <ClCompile Include="source-code\control\MtStrictEdit.cpp" />
+    <ClCompile Include="source-code\database\MtADOCommand.cpp" />
+    <ClCompile Include="source-code\database\MtADOConnection.cpp" />
+    <ClCompile Include="source-code\database\MtADODataConverter.cpp" />
+    <ClCompile Include="source-code\database\MtADOParameters.cpp" />
+    <ClCompile Include="source-code\database\MtADORecordset.cpp" />
+    <ClCompile Include="source-code\env\MtGdiplus.cpp" />
+    <ClCompile Include="source-code\graphic\MtCoordinateAxisGraph.cpp" />
+    <ClCompile Include="source-code\graphic\MtBitmap.cpp" />
+    <ClCompile Include="source-code\graphic\MtCurveGraph.cpp" />
+    <ClCompile Include="source-code\graphic\MtImage.cpp" />
+    <ClCompile Include="source-code\graphic\MtPointsGraph.cpp" />
+    <ClCompile Include="source-code\graphic\MtRegionDivision.cpp" />
+    <ClCompile Include="source-code\graphic\MtGraph.cpp" />
+    <ClCompile Include="source-code\layout\MtHorizonLayout.cpp" />
+    <ClCompile Include="source-code\layout\MtLayout.cpp" />
+    <ClCompile Include="source-code\layout\MtLayoutFixedLayoutItem.cpp" />
+    <ClCompile Include="source-code\layout\MtLayoutFixedWindowItem.cpp" />
+    <ClCompile Include="source-code\layout\MtLayoutItem.cpp" />
+    <ClCompile Include="source-code\layout\MtLayoutLayoutItem.cpp" />
+    <ClCompile Include="source-code\layout\MtLayoutSpacingItem.cpp" />
+    <ClCompile Include="source-code\layout\MtLayoutStretchItem.cpp" />
+    <ClCompile Include="source-code\layout\MtLayoutWindowItem.cpp" />
+    <ClCompile Include="source-code\layout\MtVerticalLayout.cpp" />
+    <ClCompile Include="source-code\print\MtPrintingFrame.cpp" />
+    <ClCompile Include="source-code\print\MtPrintingView.cpp" />
+    <ClCompile Include="source-code\tool\MtCharacterSet.cpp" />
+    <ClCompile Include="source-code\tool\MtIni.cpp" />
+    <ClCompile Include="source-code\tool\MtLock.cpp" />
+    <ClCompile Include="source-code\tool\MtLog.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MFCToolkit.def" />
+    <None Include="res\MFCToolkit.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="source-code\arithmetic\MtFormula.h" />
+    <ClInclude Include="source-code\arithmetic\MtLMFitting.h" />
+    <ClInclude Include="source-code\arithmetic\MtLMFormula.h" />
+    <ClInclude Include="source-code\arithmetic\MtPolynomialFitting.h" />
+    <ClInclude Include="source-code\arithmetic\MtPolynomialFormula.h" />
+    <ClInclude Include="source-code\arithmetic\MtSimpleLinearFitting.h" />
+    <ClInclude Include="source-code\arithmetic\MtSimpleLinearFormula.h" />
+    <ClInclude Include="source-code\arithmetic\MtSolvingEquations.h" />
+    <ClInclude Include="source-code\arithmetic\MtMatrixDataPtr.h" />
+    <ClInclude Include="source-code\arithmetic\MtMatrix.h" />
+    <ClInclude Include="source-code\arithmetic\MtSolvingPolynomial.h" />
+    <ClInclude Include="source-code\comm\MtNetPort.h" />
+    <ClInclude Include="source-code\comm\MtSerialPort.h" />
+    <ClInclude Include="source-code\comm\MtSerialPortParameter.h" />
+    <ClInclude Include="source-code\comm\MtSocket.h" />
+    <ClInclude Include="source-code\comm\MtSocketFinder.h" />
+    <ClInclude Include="source-code\control\ListItemComment.h" />
+    <ClInclude Include="source-code\control\MtChart.h" />
+    <ClInclude Include="source-code\control\MtComplexListCtrl.h" />
+    <ClInclude Include="source-code\control\MtCurveChart.h" />
+    <ClInclude Include="source-code\control\MtImageButton.h" />
+    <ClInclude Include="source-code\control\MtImageComboBox.h" />
+    <ClInclude Include="source-code\control\MtImageEdit.h" />
+    <ClInclude Include="source-code\control\MtImageHeaderCtrl.h" />
+    <ClInclude Include="source-code\control\MtImageListCtrl.h" />
+    <ClInclude Include="source-code\control\MtImageStatic.h" />
+    <ClInclude Include="source-code\control\MtStrictEdit.h" />
+    <ClInclude Include="source-code\database\MtADOCommand.h" />
+    <ClInclude Include="source-code\database\MtADOConnection.h" />
+    <ClInclude Include="source-code\database\MtADODataConverter.h" />
+    <ClInclude Include="source-code\database\MtADOParameters.h" />
+    <ClInclude Include="source-code\database\MtADORecordset.h" />
+    <ClInclude Include="source-code\env\MtGdiplus.h" />
+    <ClInclude Include="source-code\graphic\MtCoordinateAxisGraph.h" />
+    <ClInclude Include="source-code\graphic\MtBitmap.h" />
+    <ClInclude Include="source-code\graphic\MtCurveGraph.h" />
+    <ClInclude Include="source-code\graphic\MtImage.h" />
+    <ClInclude Include="source-code\graphic\MtPointsGraph.h" />
+    <ClInclude Include="source-code\graphic\MtRegionDivision.h" />
+    <ClInclude Include="source-code\graphic\MtGraph.h" />
+    <ClInclude Include="source-code\layout\MtHorizonLayout.h" />
+    <ClInclude Include="source-code\layout\MtLayout.h" />
+    <ClInclude Include="source-code\layout\MtLayoutFixedLayoutItem.h" />
+    <ClInclude Include="source-code\layout\MtLayoutFixedWindowItem.h" />
+    <ClInclude Include="source-code\layout\MtLayoutItem.h" />
+    <ClInclude Include="source-code\layout\MtLayoutLayoutItem.h" />
+    <ClInclude Include="source-code\layout\MtLayoutRect.h" />
+    <ClInclude Include="source-code\layout\MtLayoutSize.h" />
+    <ClInclude Include="source-code\layout\MtLayoutSpacingItem.h" />
+    <ClInclude Include="source-code\layout\MtLayoutStretchItem.h" />
+    <ClInclude Include="source-code\layout\MtLayoutWindowItem.h" />
+    <ClInclude Include="source-code\layout\MtVerticalLayout.h" />
+    <ClInclude Include="source-code\print\MtPrintingFrame.h" />
+    <ClInclude Include="source-code\print\MtPrintingView.h" />
+    <ClInclude Include="source-code\tool\MtAutoDeleter.h" />
+    <ClInclude Include="source-code\tool\MtAutoLock.h" />
+    <ClInclude Include="source-code\tool\MtAutoReset.h" />
+    <ClInclude Include="source-code\tool\MtCharacterSet.h" />
+    <ClInclude Include="source-code\tool\MtIni.h" />
+    <ClInclude Include="source-code\tool\MtLock.h" />
+    <ClInclude Include="source-code\tool\MtLog.h" />
+    <ClInclude Include="source-code\tool\MtSingleton.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MFCToolkit.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="MFCToolkit.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

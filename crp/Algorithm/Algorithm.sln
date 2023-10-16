@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algorithm", "Algorithm\Algorithm.vcxproj", "{6163B307-F5C2-4DA2-ABB3-7D9DE3B06823}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AlgorithmTesting", "..\AlgorithmTesting\AlgorithmTesting\AlgorithmTesting.vcxproj", "{C4256D0F-C065-4E58-A0E9-D425989DD8A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		UDebug|Win32 = UDebug|Win32
+		URelease|Win32 = URelease|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6163B307-F5C2-4DA2-ABB3-7D9DE3B06823}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6163B307-F5C2-4DA2-ABB3-7D9DE3B06823}.Debug|Win32.Build.0 = Debug|Win32
+		{6163B307-F5C2-4DA2-ABB3-7D9DE3B06823}.Release|Win32.ActiveCfg = Release|Win32
+		{6163B307-F5C2-4DA2-ABB3-7D9DE3B06823}.Release|Win32.Build.0 = Release|Win32
+		{6163B307-F5C2-4DA2-ABB3-7D9DE3B06823}.UDebug|Win32.ActiveCfg = UDebug|Win32
+		{6163B307-F5C2-4DA2-ABB3-7D9DE3B06823}.UDebug|Win32.Build.0 = UDebug|Win32
+		{6163B307-F5C2-4DA2-ABB3-7D9DE3B06823}.URelease|Win32.ActiveCfg = URelease|Win32
+		{6163B307-F5C2-4DA2-ABB3-7D9DE3B06823}.URelease|Win32.Build.0 = URelease|Win32
+		{C4256D0F-C065-4E58-A0E9-D425989DD8A9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C4256D0F-C065-4E58-A0E9-D425989DD8A9}.Debug|Win32.Build.0 = Debug|Win32
+		{C4256D0F-C065-4E58-A0E9-D425989DD8A9}.Release|Win32.ActiveCfg = Release|Win32
+		{C4256D0F-C065-4E58-A0E9-D425989DD8A9}.Release|Win32.Build.0 = Release|Win32
+		{C4256D0F-C065-4E58-A0E9-D425989DD8A9}.UDebug|Win32.ActiveCfg = UDebug|Win32
+		{C4256D0F-C065-4E58-A0E9-D425989DD8A9}.UDebug|Win32.Build.0 = UDebug|Win32
+		{C4256D0F-C065-4E58-A0E9-D425989DD8A9}.URelease|Win32.ActiveCfg = URelease|Win32
+		{C4256D0F-C065-4E58-A0E9-D425989DD8A9}.URelease|Win32.Build.0 = URelease|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DABFEC59-E8EF-4180-A572-47F03AC202CC}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,30 @@
+﻿D:\files\VS2019\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(499,5): warning MSB8004: Output 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
+  stdafx.cpp
+  DlgMultipleInput.cpp
+  AppMain.cpp
+  FittingData.cpp
+  DlgInput.cpp
+  DlgMain.cpp
+D:\CODE\crp\include\mfctoolkit\control\MtChart.h(16,14): warning C4275: 非 dll 接口 class“CWnd”用作 dll 接口 class“MtChart”的基
+D:\files\VS2019\VC\Tools\MSVC\14.29.30133\atlmfc\include\afxwin.h(2181): message : 参见“CWnd”的声明
+D:\CODE\crp\include\mfctoolkit\control\MtChart.h(15): message : 参见“MtChart”的声明
+D:\CODE\crp\include\mfctoolkit\control\MtChart.h(44,23): warning C4251: “MtChart::CLASS_NAME”: class“ATL::CStringT<char,StrTraitMFC<char,ATL::ChTraitsCRT<_CharType>>>”需要有 dll 接口由 class“MtChart”的客户端使用
+          with
+          [
+              _CharType=char
+          ]
+D:\files\VS2019\VC\Tools\MSVC\14.29.30133\atlmfc\include\afxstr.h(104): message : 参见“ATL::CStringT<char,StrTraitMFC<char,ATL::ChTraitsCRT<_CharType>>>”的声明
+          with
+          [
+              _CharType=char
+          ]
+D:\CODE\crp\AlgorithmTesting\AlgorithmTesting\source-code\ui\DlgMain.cpp(491,17): warning C4456: “conc”的声明隐藏了上一个本地声明
+D:\CODE\crp\AlgorithmTesting\AlgorithmTesting\source-code\ui\DlgMain.cpp(450,9): message : 参见“conc”的声明
+D:\CODE\crp\AlgorithmTesting\AlgorithmTesting\source-code\ui\DlgMain.cpp(985,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\CODE\crp\AlgorithmTesting\AlgorithmTesting\source-code\ui\DlgMain.cpp(1049,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\CODE\crp\AlgorithmTesting\AlgorithmTesting\source-code\ui\DlgMain.cpp(1355,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\CODE\crp\AlgorithmTesting\AlgorithmTesting\source-code\ui\DlgMain.cpp(1849,17): warning C4456: “conc”的声明隐藏了上一个本地声明
+D:\CODE\crp\AlgorithmTesting\AlgorithmTesting\source-code\ui\DlgMain.cpp(1754,9): message : 参见“conc”的声明
+D:\CODE\crp\AlgorithmTesting\AlgorithmTesting\source-code\ui\DlgMain.cpp(1995,20): warning C4018: “<”: 有符号/无符号不匹配
+  正在生成代码...
+  AlgorithmTesting.vcxproj -> D:\CODE\crp\bin\AlgorithmTesting.exe

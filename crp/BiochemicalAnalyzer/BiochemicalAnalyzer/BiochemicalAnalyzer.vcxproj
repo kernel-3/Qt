@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UDebug|Win32">
+      <Configuration>UDebug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="URelease|Win32">
+      <Configuration>URelease</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3A5A1AC1-585E-4189-A526-5E0FF9AF6587}</ProjectGuid>
+    <RootNamespace>BiochemicalAnalyzer</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>BiochemicalAnalyzer</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UDebug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='URelease|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UDebug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='URelease|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\Debug\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UDebug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\UDebug\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\Release\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='URelease|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\URelease\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>xcopy ..\Debug\BiochemicalAnalyzer.exe ..\..\bin\ /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UDebug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>xcopy ..\UDebug\BiochemicalAnalyzer.exe ..\..\bin\ /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>xcopy ..\Release\BiochemicalAnalyzer.exe ..\..\bin\ /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='URelease|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>xcopy ..\URelease\BiochemicalAnalyzer.exe ..\..\bin\ /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="source-code\AppMain.h" />
+    <ClInclude Include="source-code\data\common\AnalysisMethod.h" />
+    <ClInclude Include="source-code\data\common\AnalysisMethods.h" />
+    <ClInclude Include="source-code\data\common\CalibrationMethod.h" />
+    <ClInclude Include="source-code\data\common\CalibrationMethods.h" />
+    <ClInclude Include="source-code\data\common\DilutionMethod.h" />
+    <ClInclude Include="source-code\data\common\DilutionMethods.h" />
+    <ClInclude Include="source-code\data\common\Item.h" />
+    <ClInclude Include="source-code\data\common\Items.h" />
+    <ClInclude Include="source-code\data\common\Module.h" />
+    <ClInclude Include="source-code\data\common\Modules.h" />
+    <ClInclude Include="source-code\data\common\SpecimenType.h" />
+    <ClInclude Include="source-code\data\common\SpecimenTypes.h" />
+    <ClInclude Include="source-code\data\DataCustom.h" />
+    <ClInclude Include="source-code\data\utility\AnalyzeApplication.h" />
+    <ClInclude Include="source-code\data\utility\Application.h" />
+    <ClInclude Include="source-code\data\utility\ApplicationAnalysisData.h" />
+    <ClInclude Include="source-code\data\utility\ApplicationComparator.h" />
+    <ClInclude Include="source-code\data\utility\ApplicationData.h" />
+    <ClInclude Include="source-code\data\utility\ApplicationFinder.h" />
+    <ClInclude Include="source-code\data\utility\ApplicationParameter.h" />
+    <ClInclude Include="source-code\data\utility\ApplicationParameters.h" />
+    <ClInclude Include="source-code\data\utility\Applications.h" />
+    <ClInclude Include="source-code\data\utility\CalibrationApplication.h" />
+    <ClInclude Include="source-code\data\utility\RangeApplication.h" />
+    <ClInclude Include="source-code\data\utility\StandardApplication.h" />
+    <ClInclude Include="source-code\global\Database.h" />
+    <ClInclude Include="source-code\global\DatabaseManager.h" />
+    <ClInclude Include="source-code\global\GlobalData.h" />
+    <ClInclude Include="source-code\global\Theme.h" />
+    <ClInclude Include="source-code\ui\calibration\DialogCalibration.h" />
+    <ClInclude Include="source-code\ui\calibration\DialogInstallation.h" />
+    <ClInclude Include="source-code\ui\calibration\DialogResult.h" />
+    <ClInclude Include="source-code\ui\calibration\DialogStatus.h" />
+    <ClInclude Include="source-code\ui\common\DialogItemAndProfileKey.h" />
+    <ClInclude Include="source-code\ui\common\DialogItemAndProfileKeys.h" />
+    <ClInclude Include="source-code\ui\common\DialogMessageBox.h" />
+    <ClInclude Include="source-code\ui\control\MarkButton.h" />
+    <ClInclude Include="source-code\ui\UiCustom.h" />
+    <ClInclude Include="source-code\ui\DialogBase.h" />
+    <ClInclude Include="source-code\ui\DialogModalBase.h" />
+    <ClInclude Include="source-code\ui\DialogMain.h" />
+    <ClInclude Include="source-code\ui\DialogPageBase.h" />
+    <ClInclude Include="source-code\ui\qc\DialogQC.h" />
+    <ClInclude Include="source-code\ui\reagent\DialogReagent.h" />
+    <ClInclude Include="source-code\ui\reagent\DialogReagentSetting.h" />
+    <ClInclude Include="source-code\ui\utility\DialogAddApplication.h" />
+    <ClInclude Include="source-code\ui\utility\DialogAnalyzeApplication.h" />
+    <ClInclude Include="source-code\ui\utility\DialogApplication.h" />
+    <ClInclude Include="source-code\ui\utility\DialogCalibrationApplication.h" />
+    <ClInclude Include="source-code\ui\utility\DialogRangeApplication.h" />
+    <ClInclude Include="source-code\ui\utility\DialogStandardApplication.h" />
+    <ClInclude Include="source-code\ui\utility\DialogSystem.h" />
+    <ClInclude Include="source-code\ui\utility\DialogUtility.h" />
+    <ClInclude Include="source-code\ui\workplace\DialogDataReview.h" />
+    <ClInclude Include="source-code\ui\workplace\DialogSpecimenInformation.h" />
+    <ClInclude Include="source-code\ui\workplace\DialogTestSelection.h" />
+    <ClInclude Include="source-code\ui\workplace\DialogWorkPlace.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source-code\AppMain.cpp" />
+    <ClCompile Include="source-code\data\common\AnalysisMethod.cpp" />
+    <ClCompile Include="source-code\data\common\AnalysisMethods.cpp" />
+    <ClCompile Include="source-code\data\common\CalibrationMethod.cpp" />
+    <ClCompile Include="source-code\data\common\CalibrationMethods.cpp" />
+    <ClCompile Include="source-code\data\common\DilutionMethod.cpp" />
+    <ClCompile Include="source-code\data\common\DilutionMethods.cpp" />
+    <ClCompile Include="source-code\data\common\Item.cpp" />
+    <ClCompile Include="source-code\data\common\Items.cpp" />
+    <ClCompile Include="source-code\data\common\Module.cpp" />
+    <ClCompile Include="source-code\data\common\Modules.cpp" />
+    <ClCompile Include="source-code\data\common\SpecimenType.cpp" />
+    <ClCompile Include="source-code\data\common\SpecimenTypes.cpp" />
+    <ClCompile Include="source-code\data\utility\AnalyzeApplication.cpp" />
+    <ClCompile Include="source-code\data\utility\Application.cpp" />
+    <ClCompile Include="source-code\data\utility\ApplicationAnalysisData.cpp" />
+    <ClCompile Include="source-code\data\utility\ApplicationComparator.cpp" />
+    <ClCompile Include="source-code\data\utility\ApplicationData.cpp" />
+    <ClCompile Include="source-code\data\utility\ApplicationParameter.cpp" />
+    <ClCompile Include="source-code\data\utility\ApplicationParameters.cpp" />
+    <ClCompile Include="source-code\data\utility\Applications.cpp" />
+    <ClCompile Include="source-code\data\utility\CalibrationApplication.cpp" />
+    <ClCompile Include="source-code\data\utility\RangeApplication.cpp" />
+    <ClCompile Include="source-code\data\utility\StandardApplication.cpp" />
+    <ClCompile Include="source-code\global\Database.cpp" />
+    <ClCompile Include="source-code\global\DatabaseManager.cpp" />
+    <ClCompile Include="source-code\global\GlobalData.cpp" />
+    <ClCompile Include="source-code\global\Theme.cpp" />
+    <ClCompile Include="source-code\ui\calibration\DialogCalibration.cpp" />
+    <ClCompile Include="source-code\ui\calibration\DialogInstallation.cpp" />
+    <ClCompile Include="source-code\ui\calibration\DialogResult.cpp" />
+    <ClCompile Include="source-code\ui\calibration\DialogStatus.cpp" />
+    <ClCompile Include="source-code\ui\common\DialogItemAndProfileKey.cpp" />
+    <ClCompile Include="source-code\ui\common\DialogItemAndProfileKeys.cpp" />
+    <ClCompile Include="source-code\ui\common\DialogMessageBox.cpp" />
+    <ClCompile Include="source-code\ui\control\MarkButton.cpp" />
+    <ClCompile Include="source-code\ui\DialogBase.cpp" />
+    <ClCompile Include="source-code\ui\DialogModalBase.cpp" />
+    <ClCompile Include="source-code\ui\DialogMain.cpp" />
+    <ClCompile Include="source-code\ui\DialogPageBase.cpp" />
+    <ClCompile Include="source-code\ui\qc\DialogQC.cpp" />
+    <ClCompile Include="source-code\ui\reagent\DialogReagent.cpp" />
+    <ClCompile Include="source-code\ui\reagent\DialogReagentSetting.cpp" />
+    <ClCompile Include="source-code\ui\utility\DialogAddApplication.cpp" />
+    <ClCompile Include="source-code\ui\utility\DialogAnalyzeApplication.cpp" />
+    <ClCompile Include="source-code\ui\utility\DialogApplication.cpp" />
+    <ClCompile Include="source-code\ui\utility\DialogCalibrationApplication.cpp" />
+    <ClCompile Include="source-code\ui\utility\DialogRangeApplication.cpp" />
+    <ClCompile Include="source-code\ui\utility\DialogStandardApplication.cpp" />
+    <ClCompile Include="source-code\ui\utility\DialogSystem.cpp" />
+    <ClCompile Include="source-code\ui\utility\DialogUtility.cpp" />
+    <ClCompile Include="source-code\ui\workplace\DialogDataReview.cpp" />
+    <ClCompile Include="source-code\ui\workplace\DialogSpecimenInformation.cpp" />
+    <ClCompile Include="source-code\ui\workplace\DialogTestSelection.cpp" />
+    <ClCompile Include="source-code\ui\workplace\DialogWorkPlace.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BiochemicalAnalyzer.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\BiochemicalAnalyzer.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\BiochemicalAnalyzer.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="BiochemicalAnalyzer.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

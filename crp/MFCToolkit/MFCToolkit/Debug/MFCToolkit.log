@@ -1,0 +1,191 @@
+﻿  stdafx.cpp
+  dllmain.cpp
+  MFCToolkit.cpp
+  MtFormula.cpp
+  MtLMFitting.cpp
+  MtLMFormula.cpp
+  MtPolynomialFitting.cpp
+  MtPolynomialFormula.cpp
+  MtSimpleLinearFitting.cpp
+  MtSimpleLinearFormula.cpp
+  MtSolvingEquations.cpp
+  MtSolvingPolynomial.cpp
+  MtNetPort.cpp
+  MtSerialPort.cpp
+  MtSerialPortParameter.cpp
+  MtSocket.cpp
+  MtSocketFinder.cpp
+  ListItemComment.cpp
+  MtChart.cpp
+  MtComplexListCtrl.cpp
+  MtCurveChart.cpp
+  MtImageButton.cpp
+  正在生成代码...
+  正在编译...
+  MtImageComboBox.cpp
+  MtImageEdit.cpp
+  MtImageHeaderCtrl.cpp
+  MtImageListCtrl.cpp
+  MtImageStatic.cpp
+  MtStrictEdit.cpp
+  MtADOCommand.cpp
+  MtADOConnection.cpp
+  MtADODataConverter.cpp
+  MtADOParameters.cpp
+  MtADORecordset.cpp
+  MtGdiplus.cpp
+  MtCoordinateAxisGraph.cpp
+  MtBitmap.cpp
+  MtCurveGraph.cpp
+  MtImage.cpp
+  MtPointsGraph.cpp
+  MtRegionDivision.cpp
+  MtGraph.cpp
+  MtHorizonLayout.cpp
+  正在生成代码...
+  正在编译...
+  MtLayout.cpp
+  MtLayoutFixedLayoutItem.cpp
+  MtLayoutFixedWindowItem.cpp
+  MtLayoutItem.cpp
+  MtLayoutLayoutItem.cpp
+  MtLayoutSpacingItem.cpp
+  MtLayoutStretchItem.cpp
+  MtLayoutWindowItem.cpp
+  MtVerticalLayout.cpp
+  MtPrintingFrame.cpp
+  MtPrintingView.cpp
+  MtCharacterSet.cpp
+  MtIni.cpp
+  MtLock.cpp
+  MtLog.cpp
+  正在生成代码...
+    正在创建库 ..\Debug\MFCToolkit.lib 和对象 ..\Debug\MFCToolkit.exp
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+  MFCToolkit.vcxproj -> D:\CODE\crp\MFCToolkit\Debug\MFCToolkit.dll
+  ..\Debug\MFCToolkit.lib
+  复制了 1 个文件
+  ..\Debug\MFCToolkit.dll
+  复制了 1 个文件
+  .\source-code\graphic\MtImage.h
+  复制了 1 个文件
+  .\source-code\graphic\MtBitmap.h
+  复制了 1 个文件
+  .\source-code\graphic\MtRegionDivision.h
+  复制了 1 个文件
+  .\source-code\graphic\MtGraph.h
+  复制了 1 个文件
+  .\source-code\graphic\MtCoordinateAxisGraph.h
+  复制了 1 个文件
+  .\source-code\graphic\MtCurveGraph.h
+  复制了 1 个文件
+  .\source-code\graphic\MtPointsGraph.h
+  复制了 1 个文件
+  .\source-code\control\MtImageButton.h
+  复制了 1 个文件
+  .\source-code\control\MtImageStatic.h
+  复制了 1 个文件
+  .\source-code\control\MtImageComboBox.h
+  复制了 1 个文件
+  .\source-code\control\MtImageEdit.h
+  复制了 1 个文件
+  .\source-code\control\MtStrictEdit.h
+  复制了 1 个文件
+  .\source-code\control\MtImageHeaderCtrl.h
+  复制了 1 个文件
+  .\source-code\control\MtImageListCtrl.h
+  复制了 1 个文件
+  .\source-code\control\MtComplexListCtrl.h
+  复制了 1 个文件
+  .\source-code\control\MtChart.h
+  复制了 1 个文件
+  .\source-code\control\MtCurveChart.h
+  复制了 1 个文件
+  .\source-code\print\MtPrintingFrame.h
+  复制了 1 个文件
+  .\source-code\tool\MtLock.h
+  复制了 1 个文件
+  .\source-code\tool\MtAutoLock.h
+  复制了 1 个文件
+  .\source-code\tool\MtSingleton.h
+  复制了 1 个文件
+  .\source-code\tool\MtCharacterSet.h
+  复制了 1 个文件
+  .\source-code\tool\MtAutoReset.h
+  复制了 1 个文件
+  .\source-code\tool\MtAutoDeleter.h
+  复制了 1 个文件
+  .\source-code\tool\MtLog.h
+  复制了 1 个文件
+  .\source-code\tool\MtIni.h
+  复制了 1 个文件
+  .\source-code\env\MtGdiplus.h
+  复制了 1 个文件
+  .\source-code\Symbol
+  复制了 1 个文件
+  .\source-code\database\MtADOConnection.h
+  复制了 1 个文件
+  .\source-code\database\MtADORecordset.h
+  复制了 1 个文件
+  .\source-code\database\MtADOCommand.h
+  复制了 1 个文件
+  .\source-code\database\MtADOParameters.h
+  复制了 1 个文件
+  .\source-code\database\MtADODataConverter.h
+  复制了 1 个文件
+  .\source-code\layout\MtLayout.h
+  复制了 1 个文件
+  .\source-code\layout\MtHorizonLayout.h
+  复制了 1 个文件
+  .\source-code\layout\MtVerticalLayout.h
+  复制了 1 个文件
+  .\source-code\layout\MtLayoutItem.h
+  复制了 1 个文件
+  .\source-code\layout\MtLayoutSpacingItem.h
+  复制了 1 个文件
+  .\source-code\layout\MtLayoutStretchItem.h
+  复制了 1 个文件
+  .\source-code\layout\MtLayoutLayoutItem.h
+  复制了 1 个文件
+  .\source-code\layout\MtLayoutFixedLayoutItem.h
+  复制了 1 个文件
+  .\source-code\layout\MtLayoutWindowItem.h
+  复制了 1 个文件
+  .\source-code\layout\MtLayoutFixedWindowItem.h
+  复制了 1 个文件
+  .\source-code\layout\MtLayoutRect.h
+  复制了 1 个文件
+  .\source-code\layout\MtLayoutSize.h
+  复制了 1 个文件
+  .\source-code\comm\MtSerialPortParameter.h
+  复制了 1 个文件
+  .\source-code\comm\MtSerialPort.h
+  复制了 1 个文件
+  .\source-code\comm\MtSocket.h
+  复制了 1 个文件
+  .\source-code\comm\MtSocketFinder.h
+  复制了 1 个文件
+  .\source-code\comm\MtNetPort.h
+  复制了 1 个文件
+  .\source-code\arithmetic\MtMatrix.h
+  复制了 1 个文件
+  .\source-code\arithmetic\MtMatrixDataPtr.h
+  复制了 1 个文件
+  .\source-code\arithmetic\MtSolvingEquations.h
+  复制了 1 个文件
+  .\source-code\arithmetic\MtFormula.h
+  复制了 1 个文件
+  .\source-code\arithmetic\MtLMFormula.h
+  复制了 1 个文件
+  .\source-code\arithmetic\MtLMFitting.h
+  复制了 1 个文件
+  .\source-code\arithmetic\MtSimpleLinearFormula.h
+  复制了 1 个文件
+  .\source-code\arithmetic\MtSimpleLinearFitting.h
+  复制了 1 个文件
+  .\source-code\arithmetic\MtPolynomialFormula.h
+  复制了 1 个文件
+  .\source-code\arithmetic\MtPolynomialFitting.h
+  复制了 1 个文件
+  .\source-code\arithmetic\MtSolvingPolynomial.h
+  复制了 1 个文件
