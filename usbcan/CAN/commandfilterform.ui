@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CommandFilterForm</class>
+ <widget class="QWidget" name="CommandFilterForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>352</width>
+    <height>90</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>90</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="1">
+    <widget class="QLabel" name="label_11">
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QLabel" name="label_14">
+     <property name="text">
+      <string>指令</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QLabel" name="label_15">
+     <property name="text">
+      <string>指令序号</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="4">
+    <widget class="QLabel" name="label_16">
+     <property name="text">
+      <string>数据</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="lineEdit_id">
+     <property name="minimumSize">
+      <size>
+       <width>60</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>80</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>0x</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QLineEdit" name="lineEdit_command">
+     <property name="minimumSize">
+      <size>
+       <width>60</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>80</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>0x</string>
+     </property>
+     <property name="placeholderText">
+      <string>2字节</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QLineEdit" name="lineEdit_commandSyn">
+     <property name="minimumSize">
+      <size>
+       <width>60</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>80</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>0x</string>
+     </property>
+     <property name="placeholderText">
+      <string>2字节</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="4">
+    <widget class="QLineEdit" name="lineEdit_data">
+     <property name="placeholderText">
+      <string>4字节</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>过滤条件</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QComboBox" name="IDcomboBox">
+     <item>
+      <property name="text">
+       <string>不过滤</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>仅接收</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>不接收</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QComboBox" name="ordercomboBox">
+     <item>
+      <property name="text">
+       <string>不过滤</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>仅接收</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>不接收</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QComboBox" name="orderNumbercomboBox">
+     <item>
+      <property name="text">
+       <string>不过滤</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>仅接收</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>不接收</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="2" column="4">
+    <widget class="QComboBox" name="datacomboBox">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>不过滤</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>仅接收</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>不接收</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,698 @@
+[
+	{
+		"unitName": "驱动板1",
+		"unitCommands": [
+			{
+				"name": "样本针Z轴初始化",
+				"id": "0x103",
+				"command": "0x3020",
+				"frameId": "0x0000",
+				"duration": "200",
+				"count": "1",
+				"data": []
+			},
+			{
+				"name": "样本针X轴初始化",
+				"id": "0x103",
+				"command": "0x3010",
+				"frameId": "0x0000",
+				"duration": "200",
+				"count": "1",
+				"data": []
+			},
+			{
+				"name": "样本针X轴运动到指定位置",
+				"id": "0x103",
+				"command": "0x3030",
+				"frameId": "0x0000",
+				"duration": "200",
+				"count": "2",
+				"data": []
+			},
+			{
+				"name": "样本针Z轴运动到指定位置",
+				"id": "0x103",
+				"command": "0x3040",
+				"frameId": "0x0000",
+				"duration": "200",
+				"count": "2",
+				"data": []
+			},
+			{
+				"name": "流式上样针初始化",
+				"id": "0x103",
+				"command": "0x3081",
+				"frameId": "0x0000",
+				"duration": "200",
+				"count": "1",
+				"data": []
+			},
+			{
+				"name": "检测盘初始化",
+				"id": "0x103",
+				"command": "0x3080",
+				"frameId": "0x0000",
+				"duration": "200",
+				"count": "1",
+				"data": []
+			},
+			{
+				"name": "检测盘混匀升降电机初始化",
+				"id": "0x103",
+				"command": "0x30B0",
+				"frameId": "0x0000",
+				"duration": "200",
+				"count": "1",
+				"data": []
+			},
+			{
+				"name": "检测盘运动到指定位置",
+				"id": "0x103",
+				"command": "0x30A0",
+				"frameId": "0x0000",
+				"duration": "10",
+				"count": "2",
+				"data": []
+			}
+		]
+	},
+	{
+		"unitName": "驱动板2",
+		"unitCommands": [
+			{
+				"name": "三维抓手运动到指定位置",
+				"id": "0x104",
+				"command": "0x4320",
+				"frameId": "0x0000",
+				"duration": "200",
+				"count": "2",
+				"data": []
+			},
+			{
+				"name": "三维抓手初始化",
+				"id": "0x104",
+				"command": "0x4300",
+				"frameId": "0x0000",
+				"duration": "200",
+				"count": "1",
+				"data": []
+			},
+			{
+				"name": "清洗盘初始化",
+				"id": "0x104",
+				"command": "0x4070",
+				"frameId": "0x0000",
+				"duration": "200",
+				"count": "1",
+				"data": []
+			},
+			{
+				"name": "清洗盘运动到指定位置",
+				"id": "0x104",
+				"command": "0x4180",
+				"frameId": "0x0000",
+				"duration": "10",
+				"count": "2",
+				"data": []
+			}
+		]
+	},
+	{
+		"unitName": "调试",
+		"unitCommands": [
+			{
+				"name": "驱动板3初始化",
+				"id": "0x105",
+				"command": "0x5310",
+				"frameId": "0x0000",
+				"duration": "200",
+				"data": []
+			},
+			{
+				"name": "调试配置",
+				"id": "0x105",
+				"command": "0x5901",
+				"frameId": "0x0000",
+				"duration": "200",
+				"data": [
+					{
+						"items": [
+							{
+								"itemValue": "0x100",
+								"itemName": "忽略试剂针防撞"
+							},
+							{
+								"itemValue": "0x00~0xFF",
+								"itemName": "打印设置"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "MCU复位",
+				"id": "0x105",
+				"command": "0x5902",
+				"frameId": "0x0000",
+				"duration": "200",
+				"data": []
+			},
+			{
+				"name": "控制电机运动指定步数",
+				"id": "0x105",
+				"command": "0x5019",
+				"frameId": "0x0000",
+				"duration": "200",
+				"count": "4",
+				"data": [
+					{
+						"items": [
+							{
+								"itemValue": "1",
+								"itemName": "试剂针X轴"
+							},
+							{
+								"itemValue": "2",
+								"itemName": "试剂针Y轴"
+							},
+							{
+								"itemValue": "3",
+								"itemName": "试剂针Z轴"
+							},
+							{
+								"itemValue": "4",
+								"itemName": "试剂仓"
+							},
+							{
+								"itemValue": "5",
+								"itemName": "加样盘混匀升降电机"
+							},
+							{
+								"itemValue": "6",
+								"itemName": "加样盘旋转电机"
+							},
+							{
+								"itemValue": "7",
+								"itemName": "试剂柱塞泵"
+							},
+							{
+								"itemValue": "8",
+								"itemName": "废料摇摆电机"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "存储参数",
+				"id": "0x105",
+				"command": "0x5101",
+				"frameId": "0x0000",
+				"duration": "10",
+				"count": "2",
+				"data": [
+					{
+						"items": [
+							{
+								"itemValue": "0x80A",
+								"itemName": "试剂针X轴零位补偿"
+							},
+							{
+								"itemValue": "0x80C",
+								"itemName": "试剂针X轴到1号管距离"
+							},
+							{
+								"itemValue": "0x80E",
+								"itemName": "试剂针X轴试剂针X轴中位光电距离"
+							},
+							{
+								"itemValue": "0x810",
+								"itemName": "试剂针X轴到加样盘距离"
+							},
+							{
+								"itemValue": "0x812",
+								"itemName": "试剂针X轴到清洗盘距离"
+							},
+							{
+								"itemValue": "0x814",
+								"itemName": "试剂针X轴到清洗试剂针距离"
+							},
+							{
+								"itemValue": "0x820",
+								"itemName": "试剂针Y轴零位补偿"
+							},
+							{
+								"itemValue": "0x822",
+								"itemName": "试剂针Y轴到1号管距离"
+							},
+							{
+								"itemValue": "0x824",
+								"itemName": "试剂针Y轴到加样盘距离"
+							},
+							{
+								"itemValue": "0x826",
+								"itemName": "试剂针Y轴到清洗盘距离"
+							},
+							{
+								"itemValue": "0x828",
+								"itemName": "试剂针Y轴到清洗试剂针距离"
+							},
+							{
+								"itemValue": "0x834",
+								"itemName": "试剂针Z轴零位补偿"
+							},
+							{
+								"itemValue": "0x836",
+								"itemName": "试剂针Z轴到取试剂下降距离"
+							},
+							{
+								"itemValue": "0x838",
+								"itemName": "试剂针Z轴到加样盘距离"
+							},
+							{
+								"itemValue": "0x83A",
+								"itemName": "试剂针Z轴清洗盘距离"
+							},
+							{
+								"itemValue": "0x83C",
+								"itemName": "试剂针Z轴到清洗试剂针距离"
+							},
+							{
+								"itemValue": "0x848",
+								"itemName": "试剂柱塞泵零位补偿距离"
+							},
+							{
+								"itemValue": "0x854",
+								"itemName": "试剂仓零位补偿距离"
+							},
+							{
+								"itemValue": "0x856",
+								"itemName": "试剂仓到从最远距离到第一试剂距离"
+							},
+							{
+								"itemValue": "0x858",
+								"itemName": "试剂仓初始化出仓位置"
+							},
+							{
+								"itemValue": "0x85A",
+								"itemName": "试剂仓试剂盒间距"
+							},
+							{
+								"itemValue": "0x864",
+								"itemName": "混匀升降电机零位补偿"
+							},
+							{
+								"itemValue": "0x866",
+								"itemName": "混匀上升距离"
+							},
+							{
+								"itemValue": "0x868",
+								"itemName": "混匀低速PWM"
+							},
+							{
+								"itemValue": "0x86A",
+								"itemName": "混匀中速PWM"
+							},
+							{
+								"itemValue": "0x86C",
+								"itemName": "混匀高速PWM"
+							},
+							{
+								"itemValue": "0x86E",
+								"itemName": "加样盘零位补偿"
+							},
+							{
+								"itemValue": "0x870",
+								"itemName": "加样盘加样位置编码器数值"
+							},
+							{
+								"itemValue": "0x88A",
+								"itemName": "废料仓零位补偿"
+							},
+							{
+								"itemValue": "0x88C",
+								"itemName": "废料仓运动时间"
+							},
+							{
+								"itemValue": "0x88E",
+								"itemName": "废料仓运动速度"
+							},
+							{
+								"itemValue": "0x890",
+								"itemName": "废料仓运动模式"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "微调存储参数",
+				"id": "0x105",
+				"command": "0x5102",
+				"frameId": "0x0000",
+				"duration": "10",
+				"count": "3",
+				"data": [
+					{
+						"items": [
+							{
+								"itemValue": "0x80A",
+								"itemName": "试剂针X轴零位补偿"
+							},
+							{
+								"itemValue": "0x80C",
+								"itemName": "试剂针X轴到1号管距离"
+							},
+							{
+								"itemValue": "0x80E",
+								"itemName": "试剂针X轴试剂针X轴中位光电距离"
+							},
+							{
+								"itemValue": "0x810",
+								"itemName": "试剂针X轴到加样盘距离"
+							},
+							{
+								"itemValue": "0x812",
+								"itemName": "试剂针X轴到清洗盘距离"
+							},
+							{
+								"itemValue": "0x814",
+								"itemName": "试剂针X轴到清洗试剂针距离"
+							},
+							{
+								"itemValue": "0x820",
+								"itemName": "试剂针Y轴零位补偿"
+							},
+							{
+								"itemValue": "0x822",
+								"itemName": "试剂针Y轴到1号管距离"
+							},
+							{
+								"itemValue": "0x824",
+								"itemName": "试剂针Y轴到加样盘距离"
+							},
+							{
+								"itemValue": "0x826",
+								"itemName": "试剂针Y轴到清洗盘距离"
+							},
+							{
+								"itemValue": "0x828",
+								"itemName": "试剂针Y轴到清洗试剂针距离"
+							},
+							{
+								"itemValue": "0x834",
+								"itemName": "试剂针Z轴零位补偿"
+							},
+							{
+								"itemValue": "0x836",
+								"itemName": "试剂针Z轴到取试剂下降距离"
+							},
+							{
+								"itemValue": "0x838",
+								"itemName": "试剂针Z轴到加样盘距离"
+							},
+							{
+								"itemValue": "0x83A",
+								"itemName": "试剂针Z轴清洗盘距离"
+							},
+							{
+								"itemValue": "0x83C",
+								"itemName": "试剂针Z轴到清洗试剂针距离"
+							},
+							{
+								"itemValue": "0x848",
+								"itemName": "试剂柱塞泵零位补偿距离"
+							},
+							{
+								"itemValue": "0x854",
+								"itemName": "试剂仓零位补偿距离"
+							},
+							{
+								"itemValue": "0x856",
+								"itemName": "试剂仓到从最远距离到第一试剂距离"
+							},
+							{
+								"itemValue": "0x858",
+								"itemName": "试剂仓初始化出仓位置"
+							},
+							{
+								"itemValue": "0x85A",
+								"itemName": "试剂仓试剂盒间距"
+							},
+							{
+								"itemValue": "0x864",
+								"itemName": "混匀升降电机零位补偿"
+							},
+							{
+								"itemValue": "0x866",
+								"itemName": "混匀上升距离"
+							},
+							{
+								"itemValue": "0x868",
+								"itemName": "混匀低速PWM"
+							},
+							{
+								"itemValue": "0x86A",
+								"itemName": "混匀中速PWM"
+							},
+							{
+								"itemValue": "0x86C",
+								"itemName": "混匀高速PWM"
+							},
+							{
+								"itemValue": "0x86E",
+								"itemName": "加样盘零位补偿"
+							},
+							{
+								"itemValue": "0x870",
+								"itemName": "加样盘加样位置编码器数值"
+							},
+							{
+								"itemValue": "0x88A",
+								"itemName": "废料仓零位补偿"
+							},
+							{
+								"itemValue": "0x88C",
+								"itemName": "废料仓运动时间"
+							},
+							{
+								"itemValue": "0x88E",
+								"itemName": "废料仓运动速度"
+							},
+							{
+								"itemValue": "0x890",
+								"itemName": "废料仓运动模式"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"unitName": "初始化",
+		"unitCommands": [
+			{
+				"name": "试剂针X轴初始化",
+				"id": "0x105",
+				"command": "0x5010",
+				"frameId": "0x0000",
+				"duration": "200",
+				"data": []
+			},
+			{
+				"name": "试剂针Y轴初始化",
+				"id": "0x105",
+				"command": "0x5011",
+				"frameId": "0x0000",
+				"duration": "200",
+				"data": []
+			},
+			{
+				"name": "试剂针Z轴初始化",
+				"id": "0x105",
+				"command": "0x5012",
+				"frameId": "0x0000",
+				"duration": "200",
+				"data": []
+			},
+			{
+				"name": "试剂针试剂柱塞泵初始化",
+				"id": "0x105",
+				"command": "0x5013",
+				"frameId": "0x0000",
+				"duration": "200",
+				"data": []
+			},
+			{
+				"name": "试剂仓初始化",
+				"id": "0x105",
+				"command": "0x5041",
+				"frameId": "0x0000",
+				"duration": "200",
+				"data": []
+			},
+			{
+				"name": "试剂针试剂X轴运动到指定位置",
+				"id": "0x105",
+				"command": "0x5014",
+				"frameId": "0x0000",
+				"duration": "200",
+				"count": "2",
+				"data": []
+			},
+			{
+				"name": "试剂针试剂Y轴运动到指定位置",
+				"id": "0x105",
+				"command": "0x5015",
+				"frameId": "0x0000",
+				"duration": "200",
+				"count": "2",
+				"data": []
+			},
+			{
+				"name": "试剂针试剂Z轴运动到指定位置",
+				"id": "0x105",
+				"command": "0x5016",
+				"frameId": "0x0000",
+				"duration": "200",
+				"count": "2",
+				"data": []
+			},
+			{
+				"name": "试剂针试剂Z轴下降到取试剂位置",
+				"id": "0x105",
+				"command": "0x5017",
+				"frameId": "0x0000",
+				"duration": "200",
+				"count": "4",
+				"data": []
+			},
+			{
+				"name": "试剂仓进仓",
+				"id": "0x105",
+				"command": "0x5042",
+				"frameId": "0x0000",
+				"duration": "200",
+				"data": []
+			},
+			{
+				"name": "试剂仓出仓",
+				"id": "0x105",
+				"command": "0x5043",
+				"frameId": "0x0000",
+				"duration": "200",
+				"data": []
+			},
+			{
+				"name": "试剂针试剂柱塞泵回零",
+				"id": "0x105",
+				"command": "0x5023",
+				"frameId": "0x0000",
+				"duration": "200",
+				"count": "2",
+				"data": []
+			},
+			{
+				"name": "试剂针试剂柱塞泵吸取/吐出试剂",
+				"id": "0x105",
+				"command": "0x5021",
+				"frameId": "0x0000",
+				"duration": "200",
+				"count": "6",
+				"data": []
+			},
+			{
+				"name": "控制液位探测",
+				"id": "0x105",
+				"command": "0x5024",
+				"frameId": "0x0000",
+				"duration": "200",
+				"count": "1",
+				"data": []
+			}
+		]
+	},
+	{
+		"unitName": "加样单元",
+		"unitCommands": [
+			{
+				"name": "废料盒摇摆初始化",
+				"id": "0x105",
+				"command": "0x5150",
+				"frameId": "0x0000",
+				"duration": "200",
+				"data": []
+			},
+			{
+				"name": "废料摇摆",
+				"id": "0x105",
+				"command": "0x5151",
+				"frameId": "0x0000",
+				"duration": "10",
+				"count": "3",
+				"data": []
+			},
+			{
+				"name": "加样盘电机初始化初始化",
+				"id": "0x105",
+				"command": "0x50B1",
+				"frameId": "0x0000",
+				"duration": "200",
+				"data": []
+			},
+			{
+				"name": "加样盘混匀升降电机初始化初始化",
+				"id": "0x105",
+				"command": "0x50B0",
+				"frameId": "0x0000",
+				"duration": "200",
+				"data": []
+			},
+			{
+				"name": "加样盘电机运动到指定位置",
+				"id": "0x105",
+				"command": "0x50B2",
+				"frameId": "0x0000",
+				"duration": "200",
+				"count": "2",
+				"data": []
+			},
+			{
+				"name": "启动混匀",
+				"id": "0x105",
+				"command": "0x50B4",
+				"frameId": "0x0000",
+				"duration": "200",
+				"data": []
+			},
+			{
+				"name": "混匀升降电机运动到指定位置",
+				"id": "0x105",
+				"command": "0x50B3",
+				"frameId": "0x0000",
+				"duration": "200",
+				"count": "2",
+				"data": []
+			},
+			{
+				"name": "加样盘混匀样本",
+				"id": "0x105",
+				"command": "0x50C0",
+				"frameId": "0x0000",
+				"duration": "200",
+				"count": "3",
+				"data": []
+			},
+			{
+				"name": "混匀电机单独混匀样本",
+				"id": "0x105",
+				"command": "0x50C1",
+				"frameId": "0x0000",
+				"duration": "10",
+				"count": "4",
+				"data": []
+			}
+		]
+	}
+]

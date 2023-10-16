@@ -1,0 +1,7 @@
+build-*/
+bin*/
+/CAN/debug
+/CAN/thirdParty
+ui_*.h
+/CAN/.qmake.stash
+/CAN/CAN.pro.user
