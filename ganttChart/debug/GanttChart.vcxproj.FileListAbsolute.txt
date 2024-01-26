@@ -1,0 +1,2 @@
+D:\CODE\Repertory\GitHub\Qt\gantt-chart-master\gantt-chart-master\debug\GanttChart.exe
+D:\CODE\Repertory\GitHub\Qt\ganttChart\debug\GanttChart.exe
